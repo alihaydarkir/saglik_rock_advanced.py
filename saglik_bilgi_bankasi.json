@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "icerik": "Ateş, vücut sıcaklığının normal değerin üzerine çıkmasıdır. 37.5°C üzeri ateş kabul edilir. Bol sıvı tüketin ve dinlenin. 38.5°C üzeri ateşte doktora başvurun.",
+    "kategori": "semptom",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Sağlık Bakanlığı"
+    }
+  },
+  {
+    "id": "2",
+    "icerik": "Baş ağrısı çok yaygın bir şikayettir. Stres, uykusuzluk, dehidratasyon nedeniyle olabilir. Parasetamol veya ibuprofen kullanılabilir. Sürekli baş ağrısında doktor kontrolü gerekir.",
+    "kategori": "semptom",
+    "guvenilirlik": 0.85,
+    "metadata": {
+      "kaynak": "Tıp Fakültesi"
+    }
+  },
+  {
+    "id": "3",
+    "icerik": "Diyabet, kan şekerinin yüksek olması durumudur. Tip 1 ve Tip 2 diyabet vardır. Düzenli kontrol, diyet ve egzersiz önemlidir. İnsülin tedavisi gerekebilir.",
+    "kategori": "hastalik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Endokrinoloji Derneği"
+    }
+  },
+  {
+    "id": "4",
+    "icerik": "Kalp krizi belirtileri: göğüs ağrısı, nefes darlığı, terleme, bulantı. ACIL DURUMDUR! Derhal 112'yi arayın ve hastaneye gidin. Zaman çok kritiktir.",
+    "kategori": "acil",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "Kardiyoloji Derneği"
+    }
+  },
+  {
+    "id": "5",
+    "icerik": "Vitamin D eksikliği kemik sağlığını etkiler. Güneş ışığı ve balık tüketimi önemlidir. Kan tahlili ile kontrol edilir. Gerekirse takviye kullanılır.",
+    "kategori": "beslenme",
+    "guvenilirlik": 0.8,
+    "metadata": {
+      "kaynak": "Beslenme Uzmanları"
+    }
+  }
+]
