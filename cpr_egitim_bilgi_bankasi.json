@@ -1,0 +1,231 @@
+[
+  {
+    "id": "cpr_001",
+    "icerik": "Yetişkin CPR protokolü (AHA 2020): 1) Yanıtsızlık kontrolü - omuz sarsma, yüksek sesle çağırma. 2) Nefes kontrolü - 10 saniye, göğüs hareketine bak. 3) Nabız kontrolü - karotis, 10 saniye. 4) 112 çağır, AED iste. 5) Göğüs kompresyonuna başla: 30:2 oranı, en az 5cm derinlik, dakikada 100-120 kompresyon.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "yetiskin_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA Guidelines 2020",
+      "protokol_tipi": "temel",
+      "yaş_grubu": "yetişkin"
+    }
+  },
+  {
+    "id": "cpr_002",
+    "icerik": "CPR kalitesi kriterleri: Kompresyon derinliği en az 5cm, maksimum 6cm. Kompresyon hızı 100-120/dk. Tam geri çekilme sağla. Kompresyon kesintilerini minimize et. 10 saniyeyi aşan kesinti yapma. Göğüs ortası, meme başı hizası. El topuklarını üst üste yerleştir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "kalite_metrikleri",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA Guidelines 2020",
+      "protokol_tipi": "kalite"
+    }
+  },
+  {
+    "id": "cpr_003",
+    "icerik": "Pediatrik CPR (1 yaş-ergenlik): Tek kişi CPR 30:2, iki kişi CPR 15:2. Kompresyon derinliği göğüs ön-arka çapının en az 1/3'ü. Bebek: iki parmak tekniği veya iki başparmak tekniği. Çocuk: tek el veya iki el. Kompresyon noktası: göğüs alt yarısı, ksifoid çıkıntıyı kaçın.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "pediatrik_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "PALS Guidelines",
+      "yaş_grubu": "çocuk"
+    }
+  },
+  {
+    "id": "cpr_004",
+    "icerik": "Bebek CPR (0-12 ay): Yanıtsızlık kontrolü - ayak tabanını vur, bağır. Nabız: brakial arter. İki parmak kompresyonu: orta ve yüzük parmağı, meme başı hizası alt 1 cm. Derinlik: en az 4cm. Hava yolu: head-tilt chin-lift, aşırı ekstansiyon yapma. Nefes: ağız-burun, 1 saniye.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "bebek_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "PALS Guidelines",
+      "yaş_grubu": "bebek"
+    }
+  },
+  {
+    "id": "aed_001",
+    "icerik": "AED kullanımı: 1) Cihazı aç, ses komutlarını takip et. 2) Göğsü çıplak, kuru, kılsız yap. 3) Elektrotları yerleştir: sağ üst göğüs-sol alt kaburga. 4) Herkesin uzak durduğundan emin ol. 5) Analiz butonuna bas. 6) Şok önerilirse 'UZAK DUR' de, şok ver. 7) Derhal CPR'a devam et, 2 dakika sonra tekrar analiz.",
+    "kategori": "aed_protokol",
+    "alt_kategori": "temel_aed",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA AED Guidelines",
+      "cihaz_tipi": "otomatik"
+    }
+  },
+  {
+    "id": "aed_002",
+    "icerik": "Şoklanabilir ritimler: Ventriküler fibrilasyon (VF), nabızsız ventriküler taşikardi (VT). Şoklanamaz ritimler: Asistol, nabızsız elektriksel aktivite (PEA). İlk şok: bifazik 120-200J, monofazik 360J. Sonraki şoklar: eşit veya daha yüksek enerji. Her şoktan sonra 2 dakika CPR.",
+    "kategori": "aed_protokol",
+    "alt_kategori": "ritim_analizi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "protokol_tipi": "ileri"
+    }
+  },
+  {
+    "id": "drug_001",
+    "icerik": "Epinephrin kardiyak arrest: 1mg IV/IO her 3-5 dakikada bir. İlk doz mümkün olan en kısa sürede. VF/VT: şoktan sonra. Asistol/PEA: tanıdan sonra hemen. Endotrakeal: 2-2.5mg 10ml serum fizyolojik ile dilüe et. Yan etkiler: hipertansiyon, taşikardi, aritmiler.",
+    "kategori": "ilac_protokol",
+    "alt_kategori": "vazopresor",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "ACLS Drug Guidelines",
+      "ilac_adi": "epinephrin"
+    }
+  },
+  {
+    "id": "drug_002",
+    "icerik": "Amiodarone VF/VT: İlk doz 300mg IV push. İkinci doz 150mg. Lidokain alternatifi: 1-1.5mg/kg ilk doz, 0.5-0.75mg/kg ek dozlar. Maksimum toplam 3mg/kg. Magnezyum sülfat: Torsades de Pointes'te 1-2g IV. Atropin: bradiasistol için 1mg IV, maksimum 3mg.",
+    "kategori": "ilac_protokol",
+    "alt_kategori": "antiaritmik",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "ACLS Drug Guidelines",
+      "ilac_grubu": "antiaritmik"
+    }
+  },
+  {
+    "id": "airway_001",
+    "icerik": "Temel hava yolu: Head-tilt chin-lift, jaw-thrust (servikal yaralanma şüphesi). Orofaringeal airway: boyut belirleme (ağız köşesi-kulak kepçesi), dilin üzerine yerleştirme. Nazofaringeal airway: burun deliği büyüklüğü, lubrikant kullan. Bag-mask ventilasyon: E-C tekniği, 500-600ml tidal volüm.",
+    "kategori": "hava_yolu",
+    "alt_kategori": "temel_hava_yolu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines",
+      "seviye": "temel"
+    }
+  },
+  {
+    "id": "airway_002",
+    "icerik": "İleri hava yolu - Endotrakeal entübasyon: Laringoskopi, vocal kordları görüntüle, tüp yerleştirme. Tüp boyutu: Erkek 8-8.5mm, kadın 7-8mm. Confirmasyon: bilateral solunum sesleri, kapnografi, göğüs hareketleri. Alternatif: LMA, i-gel supraglottik airway. Entübasyon girişimi maksimum 30 saniye.",
+    "kategori": "hava_yolu",
+    "alt_kategori": "ileri_hava_yolu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ACLS Airway Guidelines",
+      "seviye": "ileri"
+    }
+  },
+  {
+    "id": "team_001",
+    "icerik": "CPR takım lideri rolleri: 1) Genel koordinasyon, protokol takibi. 2) Nabız kontrolü, ritim değerlendirmesi. 3) İlaç dozları, zamanlaması. 4) Hava yolu kararları. 5) Takım performans değerlendirmesi. Takım üyeleri: kompresyon (2dk rotasyon), hava yolu, IV erişim, ilaç hazırlama, kayıt tutma.",
+    "kategori": "takim_calisma",
+    "alt_kategori": "liderlik",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "AHA Team Dynamics",
+      "rol": "lider"
+    }
+  },
+  {
+    "id": "team_002",
+    "icerik": "Etkili takım iletişimi: Kapalı döngü iletişim - emir ver, tekrarla, onay al. Açık sesle, net komutlar. 'Ben kompresyona devam ediyorum', 'Nabız kontrol ediyorum'. Role confusion'ı önle. Constructive intervention: 'Kompresyon derinliğini artır'. Debriefing: olaydan sonra performans değerlendirmesi.",
+    "kategori": "takim_calisma",
+    "alt_kategori": "iletisim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "AHA Team Dynamics",
+      "konu": "iletişim"
+    }
+  },
+  {
+    "id": "special_001",
+    "icerik": "Hamile CPR (20 hafta üstü): Sol yan yatırma, uterus deplasmanı. Manual uterine displacement - sol ele. Kompresyon noktası biraz yukarı. Cesarean section: arrest sonrası 4 dakika içinde başla, 5 dakikada bitir. Resüsitasyon devam ettirirken acil doğum hazırlığı.",
+    "kategori": "ozel_durum",
+    "alt_kategori": "hamile_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Maternal Resuscitation Guidelines",
+      "durum": "hamilelik"
+    }
+  },
+  {
+    "id": "special_002",
+    "icerik": "Hipotermik arrest: Core temperature <32°C. Modifiye protokol: 3 şoka kadar ver, sonra pasif rewarming. İlaçlar core temp >30°C'ye kadar bekle. CPR hypothermia'da daha uzun süreli olabilir. 'Not dead until warm and dead' prensibi. ECMO candidate değerlendirmesi.",
+    "kategori": "ozel_durum",
+    "alt_kategori": "hipotermi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Hypothermia Guidelines",
+      "durum": "hipotermi"
+    }
+  },
+  {
+    "id": "rosc_001",
+    "icerik": "ROSC sonrası bakım: 1) Hava yolu güvenliği - entübasyon. 2) Oksijen saturasyon 94-98%. 3) Kan basıncı SBP >90mmHg, vazopresor gerekirse. 4) 12-lead EKG, STEMI taraması. 5) Targeted temperature management 32-36°C. 6) Nörolojik değerlendirme. 7) Laboratuvar: ABG, laktat, elektrolit.",
+    "kategori": "post_resuscitation",
+    "alt_kategori": "rosc_bakim",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Post-Cardiac Arrest Care",
+      "faz": "rosc_sonrasi"
+    }
+  },
+  {
+    "id": "quality_001",
+    "icerik": "CPR kalite metrikleri: Kompresyon fraksiyonu >60%, hands-off time <10 saniye. Kompresyon rate 100-120/dk, derinlik 5-6cm. Pre-shock pause <10 saniye, post-shock pause <10 saniye. Ventilasyon: 10-12/dk, aşırı ventilasyondan kaçın. Real-time feedback kullan.",
+    "kategori": "kalite_kontrol",
+    "alt_kategori": "performans_metrikleri",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "CPR Quality Guidelines",
+      "konu": "metrik"
+    }
+  },
+  {
+    "id": "debrief_001",
+    "icerik": "Hot debriefing: Olaydan hemen sonra 2-5 dakika. What went well? What could be improved? Plus-delta format. Cold debriefing: 24-48 saat sonra detaylı analiz. Video review, data analysis. Blame-free ortam. Systemic issues identification. Action items belirleme. Psychological support.",
+    "kategori": "egitim_gelistirme",
+    "alt_kategori": "debriefing",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.85,
+    "metadata": {
+      "kaynak": "Medical Education",
+      "konu": "debriefing"
+    }
+  },
+  {
+    "id": "sim_001",
+    "icerik": "Senaryo 1 - VF Arrest: 55 yaşında erkek hasta göğüs ağrısı sonrası bilinçsiz. İlk ritim VF. Öğrenme hedefleri: Tanıma, erken defibrilasyon, kaliteli CPR, takım koordinasyonu. Critical actions: 2 dakika içinde ilk şok, epinephrin 3-5dk, amiodarone şok öncesi.",
+    "kategori": "simulasyon",
+    "alt_kategori": "vf_senaryo",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Simulation Training",
+      "senaryo_tipi": "şoklanabilir"
+    }
+  },
+  {
+    "id": "sim_002",
+    "icerik": "Senaryo 2 - PEA Arrest: 45 yaşında kadın hasta ameliyat sonrası arrest. PEA ritimi. H's ve T's değerlendirmesi: Hipovolemi, hipoksi, asidoz, hiperkalemi, hipoglisemi, hipotermi; Tension pneumotoraks, tamponad, tromboemboli, toksinler. Reversible cause araştırması kritik.",
+    "kategori": "simulasyon",
+    "alt_kategori": "pea_senaryo",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Simulation Training",
+      "senaryo_tipi": "şoklanamaz"
+    }
+  }
+]
