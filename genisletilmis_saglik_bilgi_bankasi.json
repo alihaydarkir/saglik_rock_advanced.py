@@ -1,0 +1,201 @@
+[
+  {
+    "id": "sem_001",
+    "icerik": "Ateş vücut sıcaklığının 37.5°C üzerine çıkmasıdır. Enfeksiyon, grip, COVID-19, bakteriyel hastalıklar nedeniyle oluşabilir. 38°C altı için parasetamol, bol sıvı, dinlenme. 39°C üzeri ateş tehlikelidir, doktora başvurun. Çocuklarda 38.5°C üzeri acildir.",
+    "kategori": "semptom",
+    "alt_kategori": "genel_semptom",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Sağlık Bakanlığı",
+      "guncelleme": "2024",
+      "yaslar": "tum_yaslar"
+    }
+  },
+  {
+    "id": "sem_002",
+    "icerik": "Baş ağrısı türleri: migren (nabız gibi atan ağrı), gerilim tipi (sıkıştıran), küme tipi (göz çevresinde), sinüzit kaynaklı. Tetikleyiciler: stres, uykusuzluk, dehidratasyon, çikolata, kırmızı şarap. Ani şiddetli baş ağrısı acil durumdur.",
+    "kategori": "semptom",
+    "alt_kategori": "agri",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Türk Nöroloji Derneği",
+      "yaslar": "yetiskin"
+    }
+  },
+  {
+    "id": "sem_003",
+    "icerik": "Öksürük: kuru ve balgamlı olarak ikiye ayrılır. Kuru öksürük genelde viral, balgamlı bakteriyel enfeksiyonu işaret eder. 2 hafta süren öksürük için doktor kontrolü. Kan tükürme, nefes darlığı eşlik ederse acil başvuru gerekir.",
+    "kategori": "semptom",
+    "alt_kategori": "solunum",
+    "guvenilirlik": 0.88,
+    "metadata": {
+      "kaynak": "Göğüs Hastalıkları Derneği"
+    }
+  },
+  {
+    "id": "sem_004",
+    "icerik": "Nefes darlığı nedenleri: astım, KOAH, kalp yetmezliği, anemi, anksiyete. Ani başlayan nefes darlığı acildir. Merdiven çıkarken nefes almakta güçlük kalp-akciğer sorunu işareti. Göğüs ağrısı eşlik ederse 112 arayın.",
+    "kategori": "semptom",
+    "alt_kategori": "solunum",
+    "guvenilirlik": 0.92,
+    "metadata": {
+      "kaynak": "Kardiyoloji Derneği"
+    }
+  },
+  {
+    "id": "has_001",
+    "icerik": "Diyabet (Tip 1): Pankreasın insülin üretememesi. Genelde çocukluk döneminde başlar. Belirtiler: aşırı su içme, sık idrara çıkma, hızlı kilo kaybı. İnsülin tedavisi hayat boyu gereklidir. HbA1c hedefi %7 altı olmalıdır.",
+    "kategori": "hastalik",
+    "alt_kategori": "endokrin",
+    "guvenilirlik": 0.98,
+    "metadata": {
+      "kaynak": "Türk Endokrinoloji Derneği",
+      "yaslar": "cocuk_yetiskin"
+    }
+  },
+  {
+    "id": "has_002",
+    "icerik": "Diyabet (Tip 2): İnsülin direnci nedeniyle oluşur. Risk faktörleri: obezite, sedanter yaşam, genetik yatkınlık. Diyet, egzersiz, metformin ile kontrol edilebilir. Komplikasyonlar: retinopati, nefropati, nöropati, kalp hastalığı.",
+    "kategori": "hastalik",
+    "alt_kategori": "endokrin",
+    "guvenilirlik": 0.98,
+    "metadata": {
+      "kaynak": "Türk Endokrinoloji Derneği",
+      "yaslar": "yetiskin"
+    }
+  },
+  {
+    "id": "has_003",
+    "icerik": "Hipertansiyon: Kan basıncının 140/90 mmHg üzerinde olması. Sessiz katil denilir, belirti vermez. Komplikasyonlar: kalp krizi, felç, böbrek yetmezliği. Tuz kısıtlaması, düzenli egzersiz, ilaç tedavisi önemli. Hedef <130/80 mmHg.",
+    "kategori": "hastalik",
+    "alt_kategori": "kardiovaskuler",
+    "guvenilirlik": 0.96,
+    "metadata": {
+      "kaynak": "Türk Kardiyoloji Derneği"
+    }
+  },
+  {
+    "id": "has_004",
+    "icerik": "Astım: Hava yollarının kronik inflamasyonu. Tetikleyiciler: alerjenler, soğuk hava, egzersiz, stres. Belirtiler: hırıltı, öksürük, göğüs sıkışması. İnhaler ilaçlar (salbutamol acil, budesonid koruyucu) kullanılır. Kontrol altında tutulabilir.",
+    "kategori": "hastalik",
+    "alt_kategori": "solunum",
+    "guvenilirlik": 0.94,
+    "metadata": {
+      "kaynak": "Allerji ve İmmünoloji Derneği"
+    }
+  },
+  {
+    "id": "acil_001",
+    "icerik": "Kalp krizi belirtileri: göğüs ortasında ezilme tarzı ağrı, sol kola yayılım, terleme, bulantı, nefes darlığı. Kadınlarda atipik olabilir (sırt, çene ağrısı). İlk 60 dakika altın saattir. Aspirin çiğneyin, 112 arayın. Zaman = kalp kası.",
+    "kategori": "acil",
+    "alt_kategori": "kardiyak",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "Türk Kardiyoloji Derneği",
+      "acillik": "cok_yuksek"
+    }
+  },
+  {
+    "id": "acil_002",
+    "icerik": "Felç (İnme) belirtileri - FAST testi: F-Yüz asimetrisi, A-Kol güçsüzlüğü, S-Konuşma bozukluğu, T-Zaman (acil başvuru). Ani şiddetli baş ağrısı, görme kaybı, denge bozukluğu da felç belirtisi. İlk 4.5 saat kritik, 112 arayın.",
+    "kategori": "acil",
+    "alt_kategori": "norolojik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "Türk Nöroloji Derneği",
+      "acillik": "cok_yuksek"
+    }
+  },
+  {
+    "id": "bes_001",
+    "icerik": "Vitamin D eksikliği: Kemik ağrısı, kas güçsüzlüğü, yorgunluk, depresyon. Kaynakları: güneş (15-20 dk), yağlı balık, yumurta. Normal değer: 30-100 ng/ml. Günlük ihtiyaç: 1000-4000 IU. Fazlası böbrek taşına neden olur.",
+    "kategori": "beslenme",
+    "alt_kategori": "vitamin",
+    "guvenilirlik": 0.92,
+    "metadata": {
+      "kaynak": "Beslenme ve Diyet Derneği"
+    }
+  },
+  {
+    "id": "bes_002",
+    "icerik": "B12 eksikliği: Yorgunluk, unutkanlık, karıncalanma, anemi. Veganlar risk altında. Kaynakları: et, balık, süt ürünleri. Enjeksiyon tedavisi gerekebilir. Normal değer: 300-900 pg/ml. Sinir sistemi hasarı geri dönüşümsüz olabilir.",
+    "kategori": "beslenme",
+    "alt_kategori": "vitamin",
+    "guvenilirlik": 0.94,
+    "metadata": {
+      "kaynak": "Hematoloji Derneği"
+    }
+  },
+  {
+    "id": "coc_001",
+    "icerik": "Çocuklarda ateş: 0-3 ay 38°C, 3-36 ay 39°C üzeri acildir. Febril konvülziyon riski 6ay-5yaş arası yüksek. Ateş düşürücü: parasetamol (10-15mg/kg), ibuprofen (5-10mg/kg). Aspirin 16 yaş altı yasaktır (Reye sendromu).",
+    "kategori": "cocuk_sagligi",
+    "alt_kategori": "genel",
+    "guvenilirlik": 0.97,
+    "metadata": {
+      "kaynak": "Çocuk Sağlığı ve Hastalıkları Derneği",
+      "yaslar": "0-16"
+    }
+  },
+  {
+    "id": "kad_001",
+    "icerik": "Hamilelik belirtileri: adet gecikmesi, bulantı, meme hassasiyeti, sık idrara çıkma. İlk trimesterde folik asit 400mcg/gün şart. Alkol, sigara yasak. Düzenli doktor kontrolleri. Kanama, şiddetli karın ağrısı acil durumdur.",
+    "kategori": "kadin_sagligi",
+    "alt_kategori": "hamilelik",
+    "guvenilirlik": 0.96,
+    "metadata": {
+      "kaynak": "Jinekologi Derneği",
+      "yaslar": "15-45"
+    }
+  },
+  {
+    "id": "men_001",
+    "icerik": "Depresyon belirtileri: sürekli üzüntü, ilgisizlik, uyku bozukluğu, iştah değişikliği, yorgunluk, değersizlik hissi. 2 haftadan uzun sürerse profesyonel yardım gerekir. İntihar düşüncesi varsa acil psikiyatri konsültasyonu.",
+    "kategori": "mental_saglik",
+    "alt_kategori": "mood_bozuklugu",
+    "guvenilirlik": 0.93,
+    "metadata": {
+      "kaynak": "Psikiyatri Derneği"
+    }
+  },
+  {
+    "id": "ila_001",
+    "icerik": "Parasetamol: Ateş düşürücü, ağrı kesici. Günlük maksimum 4g. Karaciğer hasarı yapar, alkol kullanımında risk artar. Çocuk dozu: 10-15mg/kg, 4-6 saatte bir. Aşırı doz alındığında acil müdahale gerekir.",
+    "kategori": "ilac",
+    "alt_kategori": "agri_kesici",
+    "guvenilirlik": 0.98,
+    "metadata": {
+      "kaynak": "Eczacılar Birliği"
+    }
+  },
+  {
+    "id": "ila_002",
+    "icerik": "İbuprofen: Antiinflamatuar ağrı kesici. Mide korumalı alınmalı. Böbrek, kalp hastalığında dikkatli. Çocuk dozu: 5-10mg/kg, 6-8 saatte bir. Hamilelik 3. trimesterde yasak. Astım hastalarında bronkospazm yapabilir.",
+    "kategori": "ilac",
+    "alt_kategori": "agri_kesici",
+    "guvenilirlik": 0.96,
+    "metadata": {
+      "kaynak": "Eczacılar Birliği"
+    }
+  },
+  {
+    "id": "der_001",
+    "icerik": "Egzama (Atopik dermatit): Kaşıntılı, kuru, kızarık deri. Genetik yatkınlık, alerjenler tetikler. Nemlendirici kullanın, sıcak su ile yıkanmayın. Kortikosteroid kremler etkili. Enfeksiyon gelişirse antibiyotik gerekir.",
+    "kategori": "dermatoloji",
+    "alt_kategori": "cilt_hastaligi",
+    "guvenilirlik": 0.91,
+    "metadata": {
+      "kaynak": "Dermatoloji Derneği"
+    }
+  },
+  {
+    "id": "uro_001",
+    "icerik": "İdrar yolu enfeksiyonu: Yanma, sık idrara çıkma, acil gelme hissi. Kadınlarda daha sık. Bol su için, kranberry yararlı. Antibiyotik tedavisi gerekir. Ateş eşlik ederse böbrek tutulumu, acil başvuru.",
+    "kategori": "uroloji",
+    "alt_kategori": "enfeksiyon",
+    "guvenilirlik": 0.94,
+    "metadata": {
+      "kaynak": "Üroloji Derneği"
+    }
+  }
+]
