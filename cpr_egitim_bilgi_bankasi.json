@@ -227,5 +227,502 @@
       "kaynak": "Simulation Training",
       "senaryo_tipi": "şoklanamaz"
     }
+  },
+  {
+    "id": "kanama_001",
+    "icerik": "Masif kanama kontrolü: 1) Direkt basınç uygula, 2) Yara paketleme ve sıkı bandaj, 3) Basınç noktalarına baskı (örn. brakial, femoral), 4) Extremite yaralanmalarında turnike uygula (5-7 cm genişliğinde). Turnike sıkıştırma süresini yaz. 2 saatten sonra gevşetme önerilmez.",
+    "kategori": "kanama_kontrol",
+    "alt_kategori": "masif_kanama",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "TCCC Guidelines",
+      "protokol_tipi": "temel",
+      "uygulama_alanı": "saha"
+    }
+  },
+  {
+    "id": "yanik_001",
+    "icerik": "Termal yanık ilk yardım: 1) Yanık sürecini durdur (ısı kaynağından uzaklaştır), 2) 15-20 dakika soğuk su uygula (buz değil), 3) Temiz, kuru, steril örtü ile ört, 4) Yanık kremi veya diş macunu SÜRME. KABARCIKLARI PATLATMA. Yüz, el, ayak, genital yanıkları ve %10'dan büyük yanıkları acile yönlendir.",
+    "kategori": "yanik",
+    "alt_kategori": "termal_yanik",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ATLS Guidelines",
+      "yanik_derecesi": "1-2-3"
+    }
+  },
+  {
+    "id": "zehir_001",
+    "icerik": "Bilinmeyen kimyasala maruziyet: 1) Kendi güvenliğini sağla (kişisel koruyucu ekipman), 2) Hastayı kontamine alandan uzaklaştır, 3) Tüm giysileri çıkar (makas ile kes), 4) Bol su ile en az 15-20 dakika yıka. Zehir Danışma Hattını (114) ara. Maruz kalan maddeyi tanımlamaya çalış.",
+    "kategori": "zehirlenme",
+    "alt_kategori": "kimyasal_maruziyet",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Toxicology Protocols",
+      "maruziyet_yolu": "dermal/inhalasyon"
+    }
+  },
+  {
+    "id": "krik_001",
+    "icerik": "Cricothyrotomy endikasyonları: 'Cannot intubate, cannot ventilate' durumu. Üst hava yolu tıkanıklığı (yabancı cisim değil). Yüz travması, larinks ödemi. Anatomik landmark: Tiroid kıkırdağı palpe et, aşağı in, cricoid membranı bul. Dikey insizyon, transvers kesi. 6.0-7.0 mm tüp tak.",
+    "kategori": "hava_yolu",
+    "alt_kategori": "cerrahi_hava_yolu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.85,
+    "metadata": {
+      "kaynak": "Difficult Airway Algorithm",
+      "prosedur": "acil"
+    }
+  },
+  {
+    "id": "sepsis_001",
+    "icerik": "Sepsis protokolü (Sepsis-3): qSOFA skoru: GCS<15, SBP≤100mmHg, Solunum hızı≥22/dk. Sepsis şüphesi + enfeksiyon: 1) 3 saat içinde: lactate, kan kültürü, geniş spektrumlu AB, 30ml/kg kristaloid, 2) 6 saat içinde: vazopresör gerekirse. Kaynak kontrolü (drenaj, debridman).",
+    "kategori": "enfeksiyon",
+    "alt_kategori": "sepsis",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Surviving Sepsis Campaign",
+      "protokol_adi": "sepsis_3_saat"
+    }
+  },
+  {
+    "id": "kran_001",
+    "icerik": "Kafa travması ve beyin ödemi yönetimi: 1) Başı 30° yükselt, nötral pozisyon, 2) Normoksi (SpO2>90%), normokapni (PaCO2 35-45 mmHg), 3) Sistolik KB >90 mmHg, 4) Hiperosmolar tedavi: Mannitol %20 0.5-1g/kg IV veya Hipertonik Salin %3 250ml. Nöbet profilaksisi. Cerrahi değerlendirme.",
+    "kategori": "noroloji",
+    "alt_kategori": "kafa_travmasi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "BTF Guidelines",
+      "hedef": "ICP_kontrol"
+    }
+  },
+  {
+    "id": "acil_001",
+    "icerik": "Akut koroner sendrom (AKS) protokolü: 1) MONA: Oksijen (SpO2<%90 ise), Morfin, Nitrogliserin (SBP>90 ise), Aspirin 300mg çiğnet, 2) 12 derivasyon EKG (10 dakika içinde), 3) STEMI: PCI veya trombolitik, 4) Dual antiplatelet: Clopidogrel 300mg veya Ticagrelor 180mg. Beta bloker kontrendike değilse.",
+    "kategori": "kardiyoloji",
+    "alt_kategori": "aks",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ESC ACS Guidelines",
+      "sendlrom_tipi": "STEMI/NSTEMI"
+    }
+  },
+  {
+    "id": "endo_001",
+    "icerik": "Diyabetik ketoasidoz (DKA) yönetimi: 1) Sıvı resüsitasyonu: 1L SF 1 saatte, sonra 250-500ml/saat, 2) İnsülin: 0.1 ünite/kg IV bolus, sonra 0.1 ünite/kg/saat infüzyon, 3) Potasyum replasmanı (K>5.5 ise bekle), 4) HCO3 önerilmez (pH<6.9 ise düşün). Kan şekeri 250 mg/dl'ye gelince dextrozlu sıvıya geç.",
+    "kategori": "endokrinoloji",
+    "alt_kategori": "dka",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ADA Guidelines",
+      "durum": "metabolik_asidoz"
+    }
+  },
+  {
+    "id": "psik_001",
+    "icerik": "Ajitasyon ve agresif hasta yönetimi: 1) Sözel de-eskalasyon: Sakin, güvenli ortam, net sınırlar, 2) Farmakolojik: Benzodiazepin (Lorazepam 1-2mg IM/IV) veya Antipsikotik (Haloperidol 5mg IM), 3) Fiziksel tespit: Son çare, 4 kişi, eklemleri koru, süreyi kaydet, vital bulguları izle. Altta yatan nedeni ara (hipoksi, hipoglisemi).",
+    "kategori": "psikiyatri",
+    "alt_kategori": "ajitasyon",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.85,
+    "metadata": {
+      "kaynak": "Agitation Management Protocol",
+      "yaklasim": "sözel_farmakolojik"
+    }
+  },
+  {
+    "id": "ped_001",
+    "icerik": "Pediatrik dehidratasyon skoru: Hafif (%3-5): Huzursuz, hafif susama. Orta (%6-9): Letarjik, içe çökmüş gözler, uzamış CRT, deri turgoru azalmış. Ağır (%10+): Şok, hipotansiyon, bilinç değişikliği. Sıvı resüsitasyonu: 20ml/kg SF veya LR IV/IO bolus, gerekirse tekrarla. Sonrası idame sıvısı.",
+    "kategori": "pediatri",
+    "alt_kategori": "dehidratasyon",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Pediatric Advanced Life Support",
+      "skorlama": "who"
+    }
+  },
+  {
+    "id": "obst_001",
+    "icerik": "Postpartum kanama (PPH) yönetimi: 1) Uterus masajı, 2) Oksitosin 10-40 Ünite IV infüzyon, 3) İkinci basamak: Metilergonovin 0.2mg IM (HTN yoksa), Misoprostol 800-1000mcg rektal, 4) Bakri balon tamponadı, 5) Cerrahi: B-Lynch sütür, histerektomi. Kan ürünleri: 1:1:1 PRBC:FFP:trombosit.",
+    "kategori": "obstetri",
+    "alt_kategori": "pph",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ACOG Guidelines",
+      "kanama_miktari": ">500ml_doğum_sonrası"
+    }
+  },
+  {
+    "id": "elek_001",
+    "icerik": "Hiperkalemi acil tedavisi: 1) Kardiyoproteksiyon: Kalsiyum glukonat %10 10ml IV 2-5 dk (EKG değişikliği varsa), 2) Potasyumu hücre içine kaydır: İnsülin 10Ü + %50 Dekstroz 50ml IV, Salbutamol nebul, 3) Potasyumu uzaklaştır: Kayeksalat, diyaliz. EKG bulguları: Dar, yüksek T, geniş QRS, sine wave.",
+    "kategori": "metabolik",
+    "alt_kategori": "hiperkalemi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Renal Association Guidelines",
+      "hedef": "K<6.0 mmol/L"
+    }
+  },
+  {
+    "id": "travma_001",
+    "icerik": "Travma triaj (SIEVE): 1) Yürüyebilenler: Düşük öncelik (Yeşil), 2) Solunum sayısı: <10 veya >29/dk: Hemen müdahale (Kırmızı), 3) Perfüzyon: CRT>2 sn veya nabız yok: Hemen müdahale (Kırmızı), 4) Mental durum: Komutlara yanıtsız: Hemen müdahale (Kırmızı). 5 dakikadan az sürmeli.",
+    "kategori": "travma",
+    "alt_kategori": "triaj",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Major Incident Protocol",
+      "triaj_sistemi": "sieve"
+    }
+  },
+  {
+    "id": "yanik_002",
+    "icerik": "Parkland formülü: İlk 24 saat kristaloid (RL) miktarı = 4ml x kg x yanık yüzdesi. İlk yarısı ilk 8 saatte, ikinci yarısı sonraki 16 saatte ver. İkinci 24 saatte: Kolloid + Dekstrozlu sıvılar. Yanık yüzdesi hesaplama: Yetişkin için 9'lar kuralı, çocuk için Lund-Browder tablosu.",
+    "kategori": "yanik",
+    "alt_kategori": "sivi_resusitasyonu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "ABA Guidelines",
+      "formul": "parkland"
+    }
+  },
+  {
+    "id": "nor_001",
+    "icerik": "İnme protokolü (BE-FAST): Balance (Denge kaybı), Eyes (Görme kaybı), Face (Yüzde kayma), Arm (Kolda güçsüzlük), Speech (Konuşma bozukluğu), Time (Zaman). İskemik inme: <4.5 saat ise trombolitik (rtPA), <6-24 saat ise mekanik trombektomi. Kanama varsa KB kontrolü, pıhtılaşma faktörü reversalı.",
+    "kategori": "noroloji",
+    "alt_kategori": "inme",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "AHA/ASA Guidelines",
+      "inme_tipi": "iskemik_kanama"
+    }
+  },
+  {
+    "id": "goz_001",
+    "icerik": "Kimyasal göz yaralanması: ACİL YIKAMA. İlk 10 saniye kritik. Hastayı yatır, başı yana çevir. Göz kapaklarını fiziksel olarak aç. İV set veya özel yıkama seti ile litrelerce steril SF veya LR ile yıka. pH nötral (7.0-7.4) olana kadar devam et (30 dk-2 saat). Sonrası oftalmoloji konsültasyonu.",
+    "kategori": "goz",
+    "alt_kategori": "kimyasal_yaralanma",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "Ophthalmology Emergency",
+      "oncelik": "acil_yikama"
+    }
+  },
+  {
+    "id": "enk_001",
+    "icerik": "Anafilaksi yönetimi: 1) IM Adrenalin: Yetişkin 0.5mg (1:1000, 0.5ml), Çocuk 0.01mg/kg (maks 0.5mg), uyluk anterolateral, 5 dkda bir tekrarla, 2) Oksijen, 3) IV sıvı (hipotansiyon varsa), 4) H1 antagonist (Difenhidramin), H2 antagonist (Ranitidin), Steroid (Metilprednizolon). Beta bloker alanlara dikkat.",
+    "kategori": "alerji",
+    "alt_kategori": "anafilaksi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "WAO Anaphylaxis Guidelines",
+      "ilk_ilac": "adrenalin"
+    }
+  },
+  {
+    "id": "ort_001",
+    "icerik": "Eklem çıkığı redüksiyonu: Sedoanaljezi (örneğin Midazolam + Fentanil). Distraksiyon ve gentle traksiyon. 'Hang, relax, let go' prensibi. Omuz: Traksiyon-kontratraksiyon, Milch tekniği. Parmak: Traksiyon ve fleksiyon. Başarılı redüksiyon: Ağrıda azalma, ROM artışı, post-redüksiyon röntgen, atelleme.",
+    "kategori": "ortopedi",
+    "alt_kategori": "redüksiyon",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.85,
+    "metadata": {
+      "kaynak": "Emergency Orthopedics",
+      "eklem": "major_eklemler"
+    }
+  },
+  {
+    "id": "yanik_003",
+    "icerik": "Inhalasyon yaralanması şüphesi: Yangın ortamında bulunma, yüzde is, öksürük, stridor, wheezing, faringeal ödem. Erken entübasyon düşün. Karboksihemoglobin (COHb) düzeyi: >%25 semptomatik, >%40-60 ciddi. Tedavi: %100 Oksijen, hiperbarik oksijen düşün (ciddi ise). Siyanür antidotu (Hidroksokobalamin) gerekebilir.",
+    "kategori": "yanik",
+    "alt_kategori": "inhalasyon_travmasi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "ABA Inhalation Injury",
+      "toksik_gaz": "CO_siyanür"
+    }
+  },
+  {
+    "id": "soguk_001",
+    "icerik": "Hipotermi sınıflandırması: Hafif (32-35°C): Titreme, koordinasyon bozukluğu. Orta (28-32°C): Bilinç değişikliği, titreme durur, J dalgaları (Osborn). Ağır (<28°C): Koma, arefleksi, şok, asisto riski. Pasif ısıtma (örtü), aktif eksternal ısıtma (sıcak paketler), aktif internal ısıtma (IV sıvı, lavaj, ECMO). Hastayı kabaca manipüle etme (VF riski).",
+    "kategori": "cevresel",
+    "alt_kategori": "hipotermi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "Wilderness Medical Society",
+      "sınıf": "hafif_orta_agir"
+    }
+  },
+  {
+    "id": "teknik_001",
+    "icerik": "İntraosseöz (IO) erişim endikasyonları: '3 dakika kuralı'. 2 denemeden sonra IV açılamayan acil hasta. Lokalizasyon: Proksimal tibia (ön medial), distal femur, humerus başı. Erişkin: Manuel veya elektrikli IO iğnesi. Pediatri: Dikkatli, büyüme plaklarını koru. Tüm ilaçlar, sıvılar, kan ürünleri verilebilir. 24 saat içinde çıkar.",
+    "kategori": "prosedurel",
+    "alt_kategori": "io_erisim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ALS/BLS Guidelines",
+      "erişim_yeri": "tibia_femur_humerus"
+    }
+  },
+  {
+    "id": "cpr_005",
+    "icerik": "Yalnız kurtlayıcı protokolü: 112'yi aramak için hastayı terk etme. Telefonu hands-free moda al ve 112 operatörünü dinlerken CPR'a başla. AED varsa getirmesi için operatörden talimat al. AED geldikten sonra operatörün talimatlarıyla cihazı yerleştir ve şok uygula.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "yalniz_kurtarici",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "ERC Guidelines 2021",
+      "durum": "tek_kurtarici"
+    }
+  },
+  {
+    "id": "cpr_006",
+    "icerik": "Boğulma (Yabancı Cisim) - Bilinçli Erişkin: Heimlich manevrası uygula. Hastanın arkasına geç, bir elini yumruk yapıp başparmak içe bakacak şekilde göbek deliği ile ksifoid çıkıntı arasına yerleştir. Diğer elinle yumruğu kavra. İçe ve yukarı doğru sert çekme hareketleri yap. Her seferinde tıkanıklığın açılıp açılmadığını kontrol et.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "bogulma",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "yas_grubu": "yetiskin",
+      "bilinc": "bilincli"
+    }
+  },
+  {
+    "id": "cpr_007",
+    "icerik": "Boğulma (Yabancı Cisim) - Bilinçsiz Erişkin: Hemen CPR'a başla. Her göğüs kompresyonu öncesi ağzı kontrol et ve görünür bir cisim varsa çıkar. Görünmüyorsa parmak süpürme YAPMA. Her 30 kompresyondan sonra hava yolunu aç ve 2 kurtarıcı nefes vermeyi dene. Göğüs kafesi yükselmiyorsa, pozisyonu tekrar ayarla ve tekrar dene.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "bogulma",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "yas_grubu": "yetiskin",
+      "bilinc": "bilincsiz"
+    }
+  },
+  {
+    "id": "cpr_008",
+    "icerik": "CPR sırasında solunum oranı: Yetişkinlerde dakikada 10-12 nefes (yaklaşık her 5-6 saniyede bir nefes). Her nefes 1 saniye sürmeli ve göğüs kafesinin yükselmesine yetecek kadar hacimde olmalıdır. Aşırı ventilasyondan (çok sık veya çok derin) kaçınılmalıdır, çünkü gastrik distansiyona ve regürjitasyona neden olur.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "ventilasyon",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "parametre": "solunum_hizi_hacim"
+    }
+  },
+  {
+    "id": "cpr_009",
+    "icerik": "CPR'da kompresyon-ventilasyon oranı: İki kurtarıcılı pediatrik CPR'da 15:2 (30:2 de kabul edilebilir). Tek kurtarıcılı pediatrik CPR'da ve tüm yetişkin CPR'larında 30:2. İleri hava yolu (endotrakeal tüp veya supraglottik airway) yerleştirilmişse, ventilasyondan bağımsız olarak dakikada 100-120 sürekli kompresyona devam edilir; ventilasyon dakikada 10 kez (her 6 saniyede bir) yapılır.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "kompresyon_ventilasyon_orani",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "durum": "temel_ileri_hava_yolu"
+    }
+  },
+  {
+    "id": "cpr_010",
+    "icerik": "Nabız kontrolü kılavuzu: Nabzı kontrol etmek için 10 saniyeden fazla zaman harcama. Karotis arter yetişkinler ve çocuklar için tercih edilen yerdir. Bebeklerde brakiyal veya femoral arter kullanılır. 'Nabız var mı yok mu?' sorusuna odaklan. Kesin sayıyı saymaya çalışma. Nabızdan emin değilseniz, nabız yokmuş gibi davranın ve CPR'a başlayın.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "nabiz_kontrolu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "oneri": "10_saniye_kurali"
+    }
+  },
+  {
+    "id": "cpr_011",
+    "icerik": "Aşırı ekstansiyon uyarısı: Head-tilt chin-lift manevrası yapılırken, özellikle yaşlı hastalarda boynu aşırı derecede ekstansiyona getirmekten kaçının. 'Görüşü açacak kadar' ekstansiyon yeterlidir. Servikal yaralanma şüphesi varsa, jaw-thrust manevrası birinci tercihtir. Jaw-thrust başarısız olursa, head-tilt chin-lift hayat kurtarıcıdır ve uygulanmalıdır.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "hava_yolu_manevralari",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "uyari": "servikal_travma"
+    }
+  },
+  {
+    "id": "cpr_012",
+    "icerik": "Kusma/Regürjitasyon durumunda yönetim: Hasta kusarsa, hemen başını yana çevir ve ağzındaki içeriği parmaklarınızı süpürmeden (mümkünse yatak örtüsü veya giysi ile) temizle. Hava yolunu tekrar aç ve CPR'a mümkün olan en kısa sürede devam et. Aspirasyon riski CPR'ı durdurmak için bir neden değildir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "komplikasyon_yonetimi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "komplikasyon": "regurjitasyon"
+    }
+  },
+  {
+    "id": "cpr_013",
+    "icerik": "Göğüs kompresyonu için el pozisyonu: Yetişkinlerde, göğsün ortasında, meme başlarının hizasındaki sternumun alt yarısına bir elin topuğu yerleştirilir. Diğer elin topuğu üstüne kilitlenir. Parmaklar göğüs kafesinden uzak tutulur, sadece topuklar temas eder. Kollar dirseklerden kilitli, omuzlar elin üzerinde dik olacak şekilde pozisyon alınır. Kompresyonlar vücut ağırlığı ile yapılır.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "kompresyon_teknikleri",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "hedef": "etkili_kompresyon"
+    }
+  },
+  {
+    "id": "cpr_014",
+    "icerik": "CPR sonlandırma kriterleri: 1) Spontan dolaşımın ve solunumun geri dönmesi (ROSC), 2) İleri yaşam desteği ekibinin devralması, 3) Kurtarıcının tükenmesi ve devralacak kimsenin olmaması, 4) Söz konusu ortamda devam etmenin kurtarıcının hayatını riske atacak olması, 5) Kalıcı ölüm belirtileri (rigor mortis, livor mortis, dekapite vb.).",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "protokol_sonlandirma",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ERC Guidelines 2021",
+      "durum": "sonlandirma_kriterleri"
+    }
+  },
+  {
+    "id": "cpr_015",
+    "icerik": "Mekanik CPR cihazı (LUCAS, AutoPulse) endikasyonları: 1) Uzun süreli resüsitasyon, 2) Ambulans içi gibi hareketli ortamlarda CPR, 3) Organ bağışı için yapılan resüsitasyon, 4) Hipotermiye bağlı arrest, 5) Kurtarıcı sayısının sınırlı olduğu durumlar. Cihazın yerleştirilmesi sırasında kompresyonlara mümkün olduğunca kısa süre ara verilmelidir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "mekanik_cihaz",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ERC-ESICM Guidelines 2021",
+      "cihaz_tipi": "mekanik_kompresyon"
+    }
+  },
+  {
+    "id": "cpr_016",
+    "icerik": "Kostaların kırılması durumu: CPR sırasında, özellikle yaşlı hastalarda, kostaların kırılması sık görülen bir durumdur. Kırık hissi veya sesi gelse bile, doğru derinlik ve pozisyonda kompresyona DEVAM EDİLMELİDİR. Kırık bir kaburga, dolaşımın olmamasından daha iyidir. CPR sonrası göğüs ağrısı ve nefes darlığında pnömotoraks açısından değerlendirilir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "komplikasyon_yonetimi",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "komplikasyon": "kosta_kirigi"
+    }
+  },
+  {
+    "id": "cpr_017",
+    "icerik": "CPR kalite geri bildirim cihazları: Gerçek zamanlı olarak kompresyon derinliği, hızı, geri çekilme ve hands-off time'ı ölçen cihazlar veya akıllı telefon uygulamaları kullanılması önerilir. Bu cihazlar, sözlü veya görsel geri bildirim sağlayarak CPR kalitesini önemli ölçüde artırır ve hedef değerlerde kalma oranını yükseltir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "kalite_metrikleri",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "AHA CPR Quality Consensus Statement",
+      "teknoloji": "geri_bildirim_cihazi"
+    }
+  },
+  {
+    "id": "cpr_018",
+    "icerik": "Yetersiz kompresyon belirtileri: 1) Pupillaların dilate ve ışığa yanıtsız kalması, 2) Kapnografide end-tidal CO2 (ETCO2) değerinin <10 mmHg olması, 3) Periferik nabızların palpe edilememesi, 4) Arteriyel kan basıncı diyastolik değerinin <20 mmHg olması. ETCO2, CPR kalitesinin en objektif göstergesidir ve yükselmesi ROSC'nin erken belirtisi olabilir.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "kalite_metrikleri",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "AHA ACLS Guidelines 2020",
+      "monitorizasyon": "etco2_bildirimi"
+    }
+  },
+  {
+    "id": "cpr_019",
+    "icerik": "Kurtarıcı rotasyon protokolü: Kompresyon yapan kişi her 2 dakikada bir (yaklaşık 5 CPR döngüsü), bir ritim kontrolü yapılacak noktada değiştirilmelidir. Rotasyon, kompresyon kalitesindeki düşüşü önlemek için 2 dakikadan önce de yapılabilir. Değişim, mümkün olan en kısa sürede (<5 saniye) tamamlanmalıdır.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "takim_calismasi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "hedef": "kompresyon_kalitesi"
+    }
+  },
+  {
+    "id": "cpr_020",
+    "icerik": "AED ped yerleşimi - Pediatrik: 8 yaşından küçük çocuklarda ve bebeklerde mümkünse pediatrik pedler ve pediatrik enerji dozu kullanılır. Pediatrik ped yoksa yetişkin AED kullanılabilir. Ped yerleşimi: Bebekler ve küçük çocuklar için bir ped göğüs önüne, diğeri sırtına (anteroposterior) yerleştirilir. Daha büyük çocuklarda yetişkin gibi (sağ üst - sol alt) yerleştirilebilir.",
+    "kategori": "aed_protokol",
+    "alt_kategori": "pediatrik_aed",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA PALS Guidelines 2020",
+      "yas_grubu": "cocuk_bebek",
+      "ped_yerlesimi": "anteroposterior"
+    }
+  },
+  {
+    "id": "cpr_021",
+    "icerik": "AED kullanımı - Özel durumlar: 1) Göğüs kıllı ise: AED pedlerini hızla yapıştırıp çekerek kılları al, yedek ped seti kullan veya tıraş makinesi ile kılları tıraş et. 2) Islak göğüs: Hastayı kuru bir yere taşı, göğsü kurula. 3) İmplante cihaz (pacemaker): Cihazı ezmemek için pedi en az 5 cm uzağa yapıştır. 4) Transdermal ilaç yaması: Yamayı çıkar, bölgeyi kurula.",
+    "kategori": "aed_protokol",
+    "alt_kategori": "ozel_durumlar",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "durum": "killi_islak_gogus"
+    }
+  },
+  {
+    "id": "cpr_022",
+    "icerik": "Temel yaşam desteği algoritma özeti: 1) Güvenlik & Yanıt kontrolü, 2) Yardım çağır & AED getirt, 3) Nefesi kontrol et (10 sn), 4) Nabzı kontrol et (10 sn) - Emin değilsen CPR'a başla, 5) 30 Kompresyon : 2 Nefes, 6) AED geldiğinde: Aç -> Yapıştır -> Analiz -> Şokla (Gerekirse) -> Hemen CPR'a devam et. 7) İleri yardım gelene veya hasta tepki verene kadar devam et.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "algoritma_ozeti",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 1.0,
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines 2020",
+      "hedef": "basit_anki_kilavuz"
+    }
+  },
+  {
+    "id": "cpr_023",
+    "icerik": "COVID-19 ve diğer bulaşıcı hastalık durumunda modifiye CPR: 1) Kendi güvenliğiniz önceliklidir. 2) Ağız ve burunu maske veya bezle kapatın. 3) Sadece GÖĞÜS KOMPRESYONU yapın, ağızdan ağza solunum yapmayın. 4) Mümkünse hastanın yüzüne bir bez örtün. 5) AED kullanımı aynıdır. 6) İşlem sonrası elleri ve kolları dezenfekte edin.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "ozel_durum",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "metadata": {
+      "kaynak": "ERC COVID-19 Guidelines 2021",
+      "durum": "solunum_yolu_enfeksiyonu"
+    }
+  },
+  {
+    "id": "cpr_024",
+    "icerik": "CPR eğitiminin önemi ve tekrar periyodu: CPR becerileri 3-6 ay içinde hızla körelir. Kaliteli CPR yapma yeteneğini korumak için yılda en az bir kez, ideal olarak 6 ayda bir tekrarlı beceri eğitimi ve uygulaması önerilir. Sadece online bilgi eğitimi yeterli değildir, mutlaka manken üzerinde fiziksel uygulama yapılmalıdır.",
+    "kategori": "egitim_gelistirme",
+    "alt_kategori": "egitim_periyodu",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.9,
+    "metadata": {
+      "kaynak": "AHA Education Science",
+      "oneri": "yillik_tekrar"
+    }
   }
+
 ]
