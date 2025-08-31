@@ -507,8 +507,154 @@ class ChunkingCPRSistemi:
         except Exception as e:
             st.error(f"❌ Sistem hatası: {str(e)}")
             return False
-    
-    def chunking_sorgulama(self, soru: str) -> Dict:
+    def _adimli_sohbet_yanit_olustur(self, soru: str, sonuclar: List[Dict], acil: bool, chunking_kullan: bool, lokasyon_filter: str = None) -> str:
+        """Adımlı sohbet tarzı yanıt oluşturma sistemi"""
+
+        # Her cevabın başına eklenen standart metin
+        baslik_metni = "📋 **Bu verilere göre size rehberlik ediyorum:**\n\n"
+
+        if acil:
+            header = "🚨 ACİL DURUM PROTOKOLÜ"
+            uyari = "⚠️ **YAŞAMSAL ACİL DURUM!** Lütfen bu adımları sırasıyla takip edin.\n\n"
+            renk = "🔴"
+        else:
+            header = "📋 CPR ADIM ADIM REHBERİNİZ"
+            uyari = ""
+            renk = "🔵"
+
+        yanit = baslik_metni + f"## {header}\n\n{uyari}**Sorduğunuz:** {soru}\n\n"
+
+        # Lokasyon bilgisi
+        if lokasyon_filter:
+            lokasyon_text = "🏥 Hastane İçi" if lokasyon_filter == "hastane_ici" else "🚑 Hastane Dışı"
+            yanit += f"**Lokasyon:** {lokasyon_text} protokolleri kullanılıyor\n\n"
+
+        if chunking_kullan:
+            yanit += "🧩 **Not:** Uzun sorgunuz analiz edildi ve en uygun adımlar hazırlandı.\n\n"
+
+        for i, sonuc in enumerate(sonuclar):
+            # Lokasyon kontrolü
+            lokasyon = sonuc['metadata'].get('lokasyon', 'genel')
+            adim_tipi = sonuc['metadata'].get('adim_tipi', 'genel')
+
+            if lokasyon == 'hastane_ici':
+                yanit += f"### 🏥 {renk} Hastane İçi Protokol {i+1}\n"
+            elif lokasyon == 'hastane_disi':
+                yanit += f"### 🚑 {renk} Hastane Dışı Protokol {i+1}\n"
+            else:
+                yanit += f"### {renk} Genel Protokol {i+1}\n"
+
+            yanit += f"**Kategori:** {sonuc['metadata']['kategori'].replace('_', ' ').title()}\n\n"
+
+            # Adımlı içerik varsa sohbet tarzına çevir
+            if adim_tipi == 'sirali':
+                adimli_icerik = self._sohbet_tarzina_cevir(sonuc['icerik'])
+                yanit += f"**Şimdi size adım adım anlatıyorum:**\n\n{adimli_icerik}\n\n"
+            else:
+                # Normal içerik için de sohbet tarzı
+                sohbet_icerik = self._genel_sohbet_tarzina_cevir(sonuc['icerik'])
+                yanit += f"**İşte yapmanız gerekenler:**\n\n{sohbet_icerik}\n\n"
+
+            # Kalite göstergeleri
+            kalite_yildiz = "⭐" * min(5, max(1, int(sonuc['benzerlik_skoru'] * 6)))
+            yanit += f"**Güvenilirlik:** {kalite_yildiz} (%{sonuc['guvenilirlik']*100:.0f}) • "
+            yanit += f"**Kaynak:** {sonuc['metadata']['kaynak']}\n\n"
+            yanit += "---\n\n"
+
+        # Son uyarılar
+        yanit += "### ⚕️ ÖNEMLİ HATIRLATMALAR\n"
+        yanit += "• **112'yi mutlaka arayın** - Bu adımlar yardım gelene kadar içindir\n"
+        yanit += "• **Panik yapmayın** - Sakin kalarak adımları uygulayın\n"
+        yanit += "• **Sürekli kontrol edin** - Hastanın durumundaki değişiklikleri izleyin\n"
+        yanit += "• **Bu veriler AHA 2020 Guidelines** temelinde hazırlanmıştır\n\n"
+
+        yanit += "💬 **Başka bir sorunuz varsa çekinmeden sorun. Size yardımcı olmak için buradayım!**\n"
+
+        return yanit
+
+    def _sohbet_tarzina_cevir(self, adimli_icerik: str) -> str:
+        """Adımları sohbet tarzına çevirme"""
+        adimlar = adimli_icerik.split('. Adım:')
+
+        sohbet_metni = ""
+        for i, adim in enumerate(adimlar):
+            if not adim.strip():
+                continue
+
+            # İlk adımı temizle
+            if i == 0:
+                adim = adim.replace('1', '', 1).strip()
+
+            adim = adim.strip()
+            adim_no = i + 1
+
+            # Sohbet tarzı ifadeler ekle
+            if adim_no == 1:
+                sohbet_metni += f"**{adim_no}. İlk olarak:** {self._teknik_terim_cevir(adim)}\n\n"
+            elif adim_no == 2:
+                sohbet_metni += f"**{adim_no}. Şimdi:** {self._teknik_terim_cevir(adim)}\n\n"
+            elif adim_no == 3:
+                sohbet_metni += f"**{adim_no}. Ardından:** {self._teknik_terim_cevir(adim)}\n\n"
+            elif 'dakika' in adim or 'süre' in adim:
+                sohbet_metni += f"**{adim_no}. ⏰ Zamanlamaya dikkat:** {self._teknik_terim_cevir(adim)}\n\n"
+            elif 'tekrar' in adim or 'kontrol' in adim:
+                sohbet_metni += f"**{adim_no}. 🔍 Kontrol zamanı:** {self._teknik_terim_cevir(adim)}\n\n"
+            elif 'Epinefrin' in adim or 'adrenalin' in adim:
+                sohbet_metni += f"**{adim_no}. 💉 İlaç uygulama:** {self._teknik_terim_cevir(adim)}\n\n"
+            else:
+                sohbet_metni += f"**{adim_no}. Devam ederken:** {self._teknik_terim_cevir(adim)}\n\n"
+
+        return sohbet_metni
+
+    def _teknik_terim_cevir(self, metin: str) -> str:
+        """Teknik terimleri sohbet diline çevirme"""
+        degisimler = {
+            'IV/IO': 'damar yolu veya kemik içi yoldan',
+            'mg': 'miligram',
+            'CPR': 'kalp masajı', 
+            'kompresyon': 'göğüs basısı',
+            'ventilasyon': 'nefes verme',
+            'defibrilasyon': 'şok verme',
+            'nabız kontrolü': 'nabzın atıp atmadığını kontrol etme',
+            'AED': 'şok cihazı',
+            '30:2': '30 göğüs basısı ve 2 nefes',
+            'Code Blue': 'acil müdahale kodu',
+            'ambu': 'nefes verme balonu'
+        }
+
+        sonuc = metin
+        for eski, yeni in degisimler.items():
+            sonuc = sonuc.replace(eski, yeni)
+
+        return sonuc
+
+    def _genel_sohbet_tarzina_cevir(self, icerik: str) -> str:
+        """Normal içeriği sohbet tarzına çevirme"""
+        sohbet_icerik = self._teknik_terim_cevir(icerik)
+
+        # Başına samimi ifade ekle
+        if any(kelime in sohbet_icerik.lower() for kelime in ['yapmak', 'uygulamak', 'başlamak']):
+            sohbet_icerik = f"İşte yapmanız gerekenler: {sohbet_icerik}"
+
+        return sohbet_icerik
+
+    def _performans_hesapla(self, kaliteli_sonuclar):
+        """Performans hesaplama helper"""
+        if not kaliteli_sonuclar:
+            return "⚠️ Yetersiz"
+
+        en_iyi_skor = kaliteli_sonuclar[0]['benzerlik_skoru']
+        if en_iyi_skor > 0.8:
+            return "🏆 Mükemmel"
+        elif en_iyi_skor > 0.6:
+            return "🚀 Çok İyi"
+        elif en_iyi_skor > 0.4:
+            return "📈 İyi"
+        elif en_iyi_skor > 0.2:
+            return "📊 Orta"
+        else:
+            return "📉 Düşük"
+    def chunking_sorgulama(self, soru: str, lokasyon_filter: str = None) -> Dict:
         """🚀 CHUNKING ile gelişmiş sorgulama"""
         start_time = time.time()
         self.toplam_sorgu += 1
@@ -566,15 +712,25 @@ class ChunkingCPRSistemi:
         # Uygun eşiği bul
         kullanilan_esik = esik_kurallari['genel'][1]
         esik_tipi = 'genel'
-        
+
         for tip, (kelimeler, esik_degeri) in esik_kurallari.items():
             if any(kelime in soru.lower() for kelime in kelimeler):
                 kullanilan_esik = esik_degeri
                 esik_tipi = tip
                 break
-        
+
+        # 🆕 LOKASYON FİLTRELEME (YENİ EKLENEN)
+        if lokasyon_filter and sonuclar:
+            print(f"[LOCATION FILTER] {lokasyon_filter} için filtreleme yapılıyor")
+            filtered_sonuclar = []
+            for sonuc in sonuclar:
+                sonuc_lokasyon = sonuc['metadata'].get('lokasyon', 'genel')
+                if sonuc_lokasyon == lokasyon_filter or sonuc_lokasyon == 'genel':
+                    filtered_sonuclar.append(sonuc)
+            sonuclar = filtered_sonuclar
+            print(f"[LOCATION FILTER] {len(sonuclar)} sonuç kaldı")
+
         kaliteli_sonuclar = [s for s in sonuclar if s['benzerlik_skoru'] > kullanilan_esik]
-        
         # CPR ve acil durum analizi
         cpr_kelimeler = ['cpr', 'kalp', 'resüsitasyon', 'defibrilasyon', 'epinefrin', 'aed', 'kompresyon']
         cpr_odakli = any(kelime in soru.lower() for kelime in cpr_kelimeler)
@@ -585,7 +741,7 @@ class ChunkingCPRSistemi:
         # Yanıt oluşturma
         if len(kaliteli_sonuclar) >= 1:
             self.basarili_sorgu += 1
-            yanit = self._chunking_yanit_olustur(soru, kaliteli_sonuclar[:3], acil_durum, chunking_kullan)
+            yanit = self._adimli_sohbet_yanit_olustur(soru, kaliteli_sonuclar[:3], acil_durum, chunking_kullan, lokasyon_filter)
             basarili = True
         else:
             yanit = self._chunking_oneri_sistemi(soru, sonuclar[:2], chunking_kullan)
@@ -626,14 +782,15 @@ class ChunkingCPRSistemi:
             "yanit": yanit,
             "bulunan_dokuman_sayisi": len(sonuclar),
             "kaliteli_sonuc_sayisi": len(kaliteli_sonuclar),
-            "en_iyi_skor": en_iyi_skor,
-            "sistem_performansi": performans,
+            "en_iyi_skor": kaliteli_sonuclar[0]['benzerlik_skoru'] if kaliteli_sonuclar else 0,
+            "sistem_performansi": self._performans_hesapla(kaliteli_sonuclar),  # 🆕 DEĞİŞTİ
             "cpr_odakli": cpr_odakli,
             "acil_durum": acil_durum,
             "kullanilan_esik": kullanilan_esik,
             "esik_tipi": esik_tipi,
             "yanit_suresi": yanit_suresi,
             "chunking_kullanildi": chunking_kullan,
+            "lokasyon_filter": lokasyon_filter,  # 🆕 EKLE
             "chunking_istatistikleri": self.chunk_istatistikleri.copy(),
             "basari_orani": f"{(self.basarili_sorgu/max(1,self.toplam_sorgu))*100:.1f}%",
             "sonuc_detaylari": [
@@ -641,7 +798,6 @@ class ChunkingCPRSistemi:
                 for s in kaliteli_sonuclar[:3]
             ]
         }
-    
     def _chunking_yanit_olustur(self, soru: str, sonuclar: List[Dict], acil: bool, chunking_kullan: bool) -> str:
         """Chunking-aware yanıt şablonu"""
         if acil:
@@ -1085,7 +1241,7 @@ else:
                 }
             )
             fig.update_layout(showlegend=False, template="plotly_white")
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         
         with col2:
             st.markdown("### 🧩 Chunking İstatistikleri")
@@ -1113,7 +1269,7 @@ else:
         )
         fig.update_traces(textfont_color="black")  # 🔧 SİYAH METİN
         fig.update_layout(template="plotly_white")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     # Performans trend grafiği
     performans_data = st.session_state.chunk_sistem.retriever.get_performans_grafigi()
@@ -1161,13 +1317,58 @@ else:
             hovermode='x unified'
         )
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     st.markdown("---")
     
     # CHUNKING SORGU BÖLÜMÜ
+   
     st.markdown("## 💬 Akıllı Chunking Sorgulama")
     
+    # 🆕 LOKASYON SEÇİMİ BUTTONU
+    st.markdown("### 📍 Bulunduğunuz Konum")
+    col1, col2, col3 = st.columns([1, 1, 2])
+    
+    with col1:
+        hastane_ici_btn = st.button("🏥 Hastane İçindeyim", width='stretch', type="secondary")
+    
+    with col2:
+        hastane_disi_btn = st.button("🚑 Hastane Dışındayım", width='stretch', type="secondary")
+    
+    with col3:
+        genel_btn = st.button("📋 Genel Protokol", width='stretch', type="secondary")
+    
+    # Lokasyon state yönetimi
+    if hastane_ici_btn:
+        st.session_state.lokasyon_filter = "hastane_ici"
+    elif hastane_disi_btn:
+        st.session_state.lokasyon_filter = "hastane_disi"  
+    elif genel_btn:
+        st.session_state.lokasyon_filter = None
+    
+    # Lokasyon durumu göster
+    if 'lokasyon_filter' not in st.session_state:
+        st.session_state.lokasyon_filter = None
+    
+    if st.session_state.lokasyon_filter == "hastane_ici":
+        st.markdown("""
+        <div style="background: linear-gradient(145deg, #e8f5e8, #d4f1d4); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #2e7d32;">
+            <strong>🏥 Hastane İçi Protokolleri:</strong> Code Blue, IV ilaç uygulamaları, hastane ekipmanları dahil edilecek
+        </div>
+        """, unsafe_allow_html=True)
+    elif st.session_state.lokasyon_filter == "hastane_disi":
+        st.markdown("""
+        <div style="background: linear-gradient(145deg, #fff3e0, #ffecb3); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #f57f17;">
+            <strong>🚑 Hastane Dışı Protokolleri:</strong> Genel halk için temel CPR, AED kullanımı, 112 çağrı protokolleri
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown("""
+        <div style="background: linear-gradient(145deg, #e3f2fd, #bbdefb); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #0d47a1;">
+            <strong>📋 Genel Protokoller:</strong> Tüm lokasyonlar için genel CPR bilgileri
+        </div>
+        """, unsafe_allow_html=True)
+        
     # Chunking açıklama kutusu
     st.markdown("""
     <div class="chunking-card">
@@ -1190,42 +1391,51 @@ else:
     )
     
     # Chunking preview
+    # Chunking preview (güncellendi)
     if soru.strip():
         kelime_sayisi = len(soru.split())
         if kelime_sayisi > 8:
+            lokasyon_text = ""
+            if st.session_state.lokasyon_filter == "hastane_ici":
+                lokasyon_text = " - 🏥 Hastane içi protokolleri dahil"
+            elif st.session_state.lokasyon_filter == "hastane_disi":
+                lokasyon_text = " - 🚑 Hastane dışı protokolleri dahil"
+                
             st.markdown(f"""
             <div style="background: linear-gradient(145deg, #e8f5e8, #d4f1d4); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #2e7d32;">
-                <strong>🧩 Chunking Aktif:</strong> {kelime_sayisi} kelimelik sorgu parçalara bölünecek
+                <strong>🧩 Chunking + Adımlı Rehber Aktif:</strong> {kelime_sayisi} kelimelik sorgu parçalara bölünecek{lokasyon_text}
             </div>
             """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
             <div style="background: linear-gradient(145deg, #fff3e0, #ffecb3); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #f57f17;">
-                <strong>📝 Normal Arama:</strong> {kelime_sayisi} kelimelik sorgu için chunking kullanılmayacak
+                <strong>🔍 Normal Arama:</strong> {kelime_sayisi} kelimelik sorgu için chunking kullanılmayacak
             </div>
             """, unsafe_allow_html=True)
-    
+        
+
+        # --- Sorgu butonları (3 sütunlu düzen) ---
     col1, col2, col3 = st.columns([3, 1, 1])
     
     with col1:
-        sorgula_btn = st.button("🧩 Chunking Analizi", type="primary", width='stretch')
+        sorgula_btn = st.button("🧩 Adımlı Rehber Al", type="primary", use_container_width=True)
     
     with col2:
-        if st.button("🔄 Temizle", width='stretch'):
+        if st.button("🔄 Temizle", use_container_width=True):
             st.session_state.chunk_soru_input = ""
+            st.session_state.lokasyon_filter = None
             st.rerun()
     
     with col3:
-        if st.button("🎲 Rastgele Uzun", width='stretch'):
+        if st.button("🎲 Rastgele Uzun", use_container_width=True):
             st.session_state.chunk_soru_input = random.choice(chunking_ornekleri)
             st.rerun()
-    
+        
     # CHUNKING SONUÇLARI
     if sorgula_btn and soru.strip():
         with st.spinner("🧩 Akıllı chunking sistemi analiz yapıyor..."):
             time.sleep(0.8)  # Professional feel
-            sonuc = st.session_state.chunk_sistem.chunking_sorgulama(soru)
-        
+            sonuc = st.session_state.chunk_sistem.chunking_sorgulama(soru, st.session_state.lokasyon_filter)        
         st.markdown("---")
         
         # Chunking durumu kartı
@@ -1249,6 +1459,7 @@ else:
         # CHUNKING ANALİZ RAPORU
         st.markdown("---")
         st.markdown("## 📊 Chunking Analiz Raporu")
+        
         
         # Üç sütunlu analiz
         col1, col2, col3 = st.columns(3)
@@ -1332,7 +1543,7 @@ else:
             # Okunabilirlik düzeltilmiş tablo
             st.dataframe(
                 tablo_data, 
-                use_container_width=True, 
+                width='stretch', 
                 hide_index=True,
                 column_config={
                     "🔍": st.column_config.TextColumn(width="small"),
