@@ -1,0 +1,13 @@
+# requirements.txt - CPR Ultra System
+# Temizlenmiş gereksinimler
+
+# Ana framework
+streamlit>=1.32.0
+
+# AI/ML kütüphaneleri  
+sentence-transformers>=2.6.0
+chromadb>=0.4.0
+numpy>=1.24.0
+
+# Kurulum:
+# pip install -r requirements.txt

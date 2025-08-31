@@ -560,5 +560,579 @@
       "kaynak": "Simulation Training",
       "senaryo_tipi": "şoklanamaz"
     }
+  },
+  {
+    "id": "cpr_005",
+    "icerik": "1. Adım: Yeniden canlandırma çabalarını ne zaman sonlandıracağınızı bilin. 2. Adım: Spontan dolaşımın geri döndüğünü (ROSC) teyit edin. 3. Adım: Yaşamı tehdit eden reversibl nedenleri ekarte edin (H'ler ve T'ler). 4. Adım: Etkin bir şekilde yeniden canlandırılamayacak kadar uzun süre geçmişse sonlandırın. 5. Adım: Aileyle iletişim kurun ve durumu açıklayın.",
+    "kategori": "cpr_protokol",
+    "alt_kategori": "sonlandirma_kriterleri",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "her_yer",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA Guidelines 2020",
+      "protokol_tipi": "karar_verme"
+    }
+  },
+  {
+    "id": "acls_001",
+    "icerik": "1. Adım: H's ve T's değerlendirmesini yapın: Hipovolemi, Hipoksi, Hidrojen iyonu (asidoz), Hiper/Hipokalemi, Hipotermi. 2. Adım: T's: Toksinler, Tamponad (kardiyak), Tansiyon pnömotoraks, Tromboz (koroner/pulmoner). 3. Adım: Potansiyel olarak tersine çevrilebilir nedenleri hızla ele alın. 4. Adım: Özellikle PEA ve asistol durumunda bu değerlendirme hayati öneme sahiptir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "reversibl_nedenler",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "listeli",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "protokol_tipi": "temel_kavramlar"
+    }
+  },
+  {
+    "id": "acls_002",
+    "icerik": "1. Adım: Bradikardik hastayı değerlendirin (Semptomatik mi?). 2. Adım: Hava yolu, solunum, dolaşımı kontrol edin. 3. Adım: Oksijen verin, IV erişim sağlayın. 4. Adım: EKG'yi monitörize edin. 5. Adım: Ciddi semptomlar varsa (hipotansiyon, akut kalp yetmezliği, bilinç değişikliği): Atropin 0.5 mg IV, 3-5 dakikada bir tekrarlayın (maks. 3 mg). 6. Adım: Transkutanöz pacing veya dopamin/infüzyon hazırlayın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "bradikardi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "bradikardi"
+    }
+  },
+  {
+    "id": "acls_003",
+    "icerik": "1. Adım: Dar QRS taşikardiyi değerlendirin (Düzenli mi? Düzensiz mi?). 2. Adım: Kararsız ise (hipotansiyon, göğüs ağrısı, kalp yetmezliği, bilinç değişikliği) senkronize kardiyoversiyon yapın. 3. Adım: Kararlı ise: Vagal manevralar deneyin. 4. Adım: Adenozin 6 mg IV hızlı push, ardından 12 mg gerekirse tekrarlayın. 5. Adım: Beta bloker veya kalsiyum kanal blokerleri düşünün.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "dar_qrs_tasikardi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "tasikardi"
+    }
+  },
+  {
+    "id": "acls_004",
+    "icerik": "1. Adım: Geniş QRS taşikardiyi değerlendirin (Kararlı mı? Kararsız mı?). 2. Adım: Kararsız ise hemen senkronize kardiyoversiyon yapın. 3. Adım: Kararlı ve düzenli ise (muhtemelen VT): Adenozin düşünülebilir (VT/VF ayrımı net değilse). 4. Adım: Kararlı ise Amiodarone 150 mg IV 10 dkda, gerekirse tekrarla. 5. Adım: Procainamide veya Sotalol alternatiflerdir. 6. Adım: Torsades de pointes varsa Magnezyum sülfat 1-2 gr IV.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "genis_qrs_tasikardi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "tasikardi"
+    }
+  },
+  {
+    "id": "acls_005",
+    "icerik": "1. Adım: Nabızsız Elektriksel Aktivite (PEA) tanımlayın. 2. Adım: Hemen CPR'a başlayın. 3. Adım: Epinefrin 1 mg IV/IO, 3-5 dakikada bir uygulayın. 4. Adım: H's ve T's için hızlıca tarama yapın. 5. Adım: Özellikle hipovolemi, hipoksi, kardiyak tamponad, tansiyon pnömotoraksı düşünün. 6. Adım: Reversibl bir neden bulunursa derhal tedavi edin. 7. Adım: Ritmi her 2 dakikada bir kontrol edin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "pea",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "nabızsız"
+    }
+  },
+  {
+    "id": "acls_006",
+    "icerik": "1. Adım: Asistol ritmini tanımlayın (birden fazla leadte teyit et). 2. Adım: Hemen yüksek kaliteli CPR'a başlayın. 3. Adım: Epinefrin 1 mg IV/IO, 3-5 dakikada bir uygulayın. 4. Adım: Atropin artık rutinde önerilmemektedir. 5. Adım: H's ve T's için hızlıca tarama yapın. 6. Adım: Transkutanöz pacing etkisizdir. 7. Adım: Reversibl nedenleri araştırın ve tedavi edin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "asistol",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "nabızsız"
+    }
+  },
+  {
+    "id": "acls_007",
+    "icerik": "1. Adım: İnme şüphesi olan hastada 'Zaman Beyindir'. 2. Adım: Hızlı değerlendirme: FAST (Yüz, Kol, Konuşma, Zaman). 3. Adım: Hastaneye varış zamanını kaydedin. 4. Adım: İlk medikal temas-İğne zamanını <60 dk, Kapı-İğne zamanını <45 dk hedefleyin. 5. Adım: Kan basıncı, kan şekeri kontrolü yapın. 6. Adım: Kontrastsız KT çekin. 7. Adım: Trombolitik için endikasyon/kontrendikasyonları değerlendirin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "inme_ilkyardim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "her_yer",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA/ASA Guidelines",
+      "protokol_tipi": "akut_inme"
+    }
+  },
+  {
+    "id": "acls_008",
+    "icerik": "1. Adım: Akut koroner sendrom (AKS) şüphesinde MONA uygulayın. 2. Adım: Morfin (ağrı devam ederse), Oksijen (SpO2 <%90 ise), Nitrogliserin (SBP>90 ise), Aspirin (162-325 mg çiğnet). 3. Adım: 12 derivasyon EKG'yi <10 dakikada çekin. 4. Adım: STEMI tanımlanırsa reperfüzyon stratejisine karar verin (PCI veya trombolitik). 5. Adım: Dual antiplatelet tedavi başlayın. 6. Adım: Beta bloker kontrendike değilse ekleyin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "aks_yonetimi",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA/ACC Guidelines",
+      "protokol_tipi": "akut_koroner"
+    }
+  },
+  {
+    "id": "acls_009",
+    "icerik": "1. Adım: Şok sonrası bakım, ROSC sağlandıktan hemen sonra başlar. 2. Adım: Hava yolunu güvence altına alın ve ventile edin (SpO2 %94-98 hedefi). 3. Adım: Hemodinamik optimizasyon yapın (SBP >90 mmHg). 4. Adım: 12 derivasyon EKG çekin. 5. Adım: Hedefe yönelik sıcaklık yönetimi (TTM) başlatın (32-36°C, 24 saate kadar). 6. Adım: Nöbetleri önleyin/tedavi edin. 7. Adım: Kardiyak arrest nedenini araştırın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "post_rosc_bakim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA Guidelines",
+      "protokol_tipi": "post_resüsitasyon"
+    }
+  },
+  {
+    "id": "acls_010",
+    "icerik": "1. Adım: Hava yolu tıkanıklığında ilk müdahale: Hastaya 'Öksürüyor musun?' diye sorun. 2. Adım: Etkili öksürük varsa öksürmeye teşvik edin, yoksa müdahale edin. 3. Adım: Bilinci yerinde yetişkin: 5 kez sırta vuruş, 5 kez Heimlich manevrası (karın itme). 4. Adım: Bilinci yerinde gebe/obez: Göğüs itme (CPR hand position). 5. Adım: Bilinci kapalı yetişkin: Hemen CPR'a başlayın. 6. Adım: Her CPR döngüsünden önce ağız içi kontrolü yapın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "yabanci_cisim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "her_yer",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA BLS Guidelines",
+      "protokol_tipi": "temel_hava_yolu"
+    }
+  },
+  {
+    "id": "acls_011",
+    "icerik": "1. Adım: İleri hava yolu yönetimi gerektiren arrest durumunu tanımlayın. 2. Adım: Entübasyon için hazırlık yaparken kesintisiz CPR'a devam edin. 3. Adım: Laringoskopi öncesi oksijenizasyonu maksimize edin. 4. Adım: Entübasyon girişimi 30 saniyeyi geçmemelidir. 5. Adım: Başarısız girişimde supraglottik airway (LMA, i-gel) kullanın. 6. Adım: Entübasyon sonrası tüp yerini kapnografi ile doğrulayın. 7. Adım: Göğüs kompresyonlarını asla geciktirmeyin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "entübasyon_protokolu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Airway Guidelines",
+      "protokol_tipi": "ileri_hava_yolu"
+    }
+  },
+  {
+    "id": "acls_012",
+    "icerik": "1. Adım: İlaç uygulama zamanlamasını optimize edin. 2. Adım: İlaçları şoktan HEMEN SONRA veya CPR döngüsünün başında uygulayın. 3. Adım: İlaç uygulandıktan sonra 20-30 sn içinde ilacın merkeze ulaşması için CPR'a devam edin. 4. Adım: IV yoldan sonra 20ml SF flushes yapın ve ekstremiteyi kaldırın. 5. Adım: IO yoldan sonra ilacın dağılması için manuel flushes yapın. 6. Adım: İlaç dozlarını ve uygulama zamanlarını kaydedin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "ilac_uygulama",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Drug Guidelines",
+      "protokol_tipi": "farmakoloji"
+    }
+  },
+  {
+    "id": "acls_013",
+    "icerik": "1. Adım: Yenidoğan resüsitasyonu için doğum öncesi hazırlık yapın. 2. Adım: Doğumdan hemen sonra kurulama, uyarma, hava yolu açma (head neutral). 3. Adım: Apne veya gazping varsa PPV (positive pressure ventilation) başlatın. 4. Adım: Kalp hızı <100/dk ise PPV'ye devam et, <60/dk ise kompresyon başla (3:1 oran). 5. Adım: Kompresyon+PPV'ye rağmen HR<60/dk ise Epinefrin veya volüm genişletici düşün. 6. Adım: Mekonyum varsa sadece non-vigorous bebekte trakeal aspirasyon yap.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "yenidogan_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "NRP Guidelines",
+      "protokol_tipi": "yenidogan"
+    }
+  },
+  {
+    "id": "acls_014",
+    "icerik": "1. Adım: Travmatik kardiyak arrest (TCA) yönetimi farklıdır. 2. Adım: Hızlıca reversibl nedenlere odaklanın: Hipoksi, Hipovolemi, Tansiyon pnömotoraks, Kardiyak tamponad. 3. Adım: Hemen bilateral iğne torakostomi yapın. 4. Adım: Hızlı sıvı resüsitasyonu yapın (kan ürünleri tercih edilir). 5. Adım: Resüsitasyon torakotomisi düşünün. 6. Adım: İç ve dış kanama kontrolüne öncelik verin. 7. Adım: Geleneksel ACLS protokollerinden farklı ilerleyin.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "travmatik_arrest",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.85,
+    "lokasyon": "saha_hastane",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ATLS Guidelines",
+      "protokol_tipi": "travma"
+    }
+  },
+  {
+    "id": "acls_015",
+    "icerik": "1. Adım: Zehirlenmeye bağlı arrestte standart ACLS protokollerini modifiye edin. 2. Adım: Spesifik antidotları erkenden düşünün (Nalokson, Flumazenil, Antidigital, vb.). 3. Adım: Beta bloker/CCB zehirlenmesinde yüksek doz insülin-glukoz infüzyonu düşünün. 4. Adım: TCA zehirlenmesinde sodyum bikarbonat düşünün. 5. Adım: Hipnotik/sedatif zehirlenmesinde uzun süreli CPR gerekebilir. 6. Adım: Toksikoloji danışma hattını (114) arayın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "zehir_arrest",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.8,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Toxicology Protocols",
+      "protokol_tipi": "zehir"
+    }
+  },
+  {
+    "id": "acls_016",
+    "icerik": "1. Adım: Boğulma sonrası arrestte temel fark: Soğuk su ve hipotermi ihtimali. 2. Adım: Sudan çıkarır çıkarmaz güvenliği sağlayın. 3. Adım: Hemen CPR'a başlayın (5 kurtarıcı nefes önerilir, ardından 30:2). 4. Adım: Omurga yaralanması şüphesi olsa bile hava yolu önceliklidir. 5. Adım: Varsa AED kullanın. 6. Adım: Hipotermik ise 'Isınana kadar ölü değildir' prensibini uygulayın. 7. Adım: Hastaneye hızlı transport sağlayın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "bogulma_arrest",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "saha",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ERC Guidelines",
+      "protokol_tipi": "boğulma"
+    }
+  },
+  {
+    "id": "acls_017",
+    "icerik": "1. Adım: Elektrik çarpması sonrası arrestte önce güvenliği sağlayın (akımı kesin). 2. Adım: Hemen CPR'a başlayın. 3. Adım: Varsa AED kullanın. 4. Adım: Giriş/çıkış yaralarını ve internal yaralanmaları araştırın. 5. Adım: Rhabdomyoliz ve miyoglobinüri riskine karşı sıvı resüsitasyonu yapın. 6. Adım: Spinal kord yaralanması ihtimalini göz ardı etmeyin. 7. Adım: Hastaneye hızlı transport sağlayın.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "elektrik_arrest",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "saha",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Wilderness Medical Society",
+      "protokol_tipi": "elektrik"
+    }
+  },
+  {
+    "id": "acls_018",
+    "icerik": "1. Adım: İnme kodunu (Stroke Code) aktive edin. 2. Adım: 'Last known well' zamanını belirleyin. 3. Adım: NIH Skalası veya benzeri ile nörolojik defisiti hızlıca skorlayın. 4. Adım: Vital bulguları stabilize edin (KB, şeker, oksijenasyon). 5. Adım: Kontrastsız kranial BT'yi acil çekin. 6. Adım: Kanama yoksa ve <4.5 saattse rtPA endikasyonlarını değerlendirin. 7. Adım: Büyük damar tıkanıklığında <24 saate kadar mekanik trombektomi düşünün.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "inme_kodu",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA/ASA Guidelines",
+      "protokol_tipi": "akut_inme"
+    }
+  },
+  {
+    "id": "acls_019",
+    "icerik": "1. Adım: Şoklanabilir ritimde (VF/pVT) 2 dakikalık CPR döngülerini uygulayın. 2. Adım: İlk şoktan sonra hemen CPR'a başlayın (şok sonrası pause'u minimize et). 3. Adım: 2 dakika sonra ritmi tekrar kontrol edin. 4. Adım: Hala şoklanabilir ritim varsa 2. şoku uygulayın ve CPR'a devam et. 5. Adım: İkinci şoktan sonra Epinefrin 1 mg IV/IO uygula ve CPR'a devam et. 6. Adım: Üçüncü şoktan sonra Amiodarone 300 mg IV/IO uygula ve CPR'a devam et. 7. Adım: Bu döngüyü ROSC veya sonlandırma kriterlerine kadar tekrarla.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "vf_pvt_algoritma",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "şoklanabilir"
+    }
+  },
+  {
+    "id": "acls_020",
+    "icerik": "1. Adım: Şoklanamaz ritimde (PEA/Asistol) 2 dakikalık CPR döngülerini uygulayın. 2. Adım: Ritim kontrolü sırasında pause'u <10 saniye tut. 3. Adım: Şoklanamaz ritim tanımlanırsa, hemen CPR'a başla. 4. Adım: CPR'ın erken döneminde Epinefrin 1 mg IV/IO uygula. 5. Adım: 2 dakika sonra ritmi tekrar kontrol et. 6. Adım: Hala şoklanamaz ritim varsa, CPR'a devam et ve Epinefrini 3-5 dakikada bir tekrarla. 7. Adım: Her ritim kontrolünde H's ve T's değerlendirmesi yap.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "pea_asistol_algoritma",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "ritim_grubu": "şoklanamaz"
+    }
+  },
+  {
+    "id": "acls_021",
+    "icerik": "1. Adım: Perikardiyosentez endikasyonu: Kardiyak tamponad şüphesi (Beck triadı: hipotansiyon, JVD, muffled heart sounds). 2. Adım: Ultrason kılavuzluğunda yapılması tercih edilir. 3. Adım: İğne için subksifoid veya apikal yaklaşım kullanılır. 4. Adım: 16-18G iğne ve 50ml şırınga hazırla. 5. Adım: İğneyi sol omuza doğru ilerlet, EKG monitörizasyonu yap (ST yükselmesi iğnenin miyokarda değdiğini gösterir). 6. Adım: Sıvı aspire et, hemodinamik düzelme beklenir. 7. Adım: Kesin tedavi cerrahidir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "kardiyak_tamponad",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.8,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS/ECHO Guidelines",
+      "prosedur": "acil"
+    }
+  },
+  {
+    "id": "acls_022",
+    "icerik": "1. Adım: Tansiyon pnömotoraks şüphesi: ani nefes darlığı, hipotansiyon, trakeal deviasyon, unilateral solunum sesleri azalması, hiperrezonans. 2. Adım: Hemen iğne torakostomi yap: 2. interkostal aralık, midklavikuler hatta, 14-16G iğne. 3. Adım: Hava kaçışı hissi duyulur. 4. Adım: İğneyi sabitle. 5. Adım: İğne torakostomi sonrası tüp torakostomi takılmalıdır. 6. Adım: Hızlı dekompresyon hayat kurtarıcıdır.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "tansiyon_pnomotoraks",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "saha_hastane",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ATLS Guidelines",
+      "prosedur": "acil"
+    }
+  },
+  {
+    "id": "acls_023",
+    "icerik": "1. Adım: Masif pulmoner emboli (PE) şüphesi: ani senkop, nefes darlığı, göğüs ağrısı, hipoksi. 2. Adım: EKG'de S1Q3T3 paterni, sağ ventrikül yüklenme bulguları. 3. Adım: Kardiyak arrest varsa, trombolitik tedavi düşün (kontrendikasyon yoksa). 4. Adım: Alteplase 100 mg IV 2 saatte veya 'rescue' bolus olarak. 5. Adım: Cerrahi veya kateter yönlendirmeli trombektomi alternatiflerdir. 6. Adım: CPR sırasında trombolitik uygulanabilir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "masif_pe",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.85,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACCP Guidelines",
+      "protokol_tipi": "trombolitik"
+    }
+  },
+  {
+    "id": "acls_024",
+    "icerik": "1. Adım: İleri vasküler erişim yollarını bil: Santral venöz kateter (IJ, subklavyen, femoral). 2. Adım: İntraosseöz (IO) erişim: tibia, humerus, sternum. 3. Adım: Ultrason kılavuzluğunda erişim başarısını artır. 4. Adım: İlaçların etkinliği: Santral > Periferik IV > IO > Endotrakeal. 5. Adım: Endotrakeal uygulamada dozlar 2-2.5x IV doz olmalı, SF ile dilüe edilmeli. 6. Adım: Erişim yolunu ve zamanını kaydet.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "ileri_erisim",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ACLS Guidelines",
+      "protokol_tipi": "erişim"
+    }
+  },
+  {
+    "id": "acls_025",
+    "icerik": "1. Adım: Yenidoğanda ilaç dozlarını kg başına hesapla. 2. Adım: Epinefrin: 0.01-0.03 mg/kg IV/IO (0.1-0.3 ml/kg 1:10,000). 3. Adım: Volüm genişletici: 10 ml/kg IV/IO (SF, RL veya kan). 4. Adım: Nalokson: 0.1 mg/kg IV/IO/IM/ET (anne opioid kullandıysa). 5. Adım: Sodium Bicarbonate: 1-2 mEq/kg IV (uzamış arrestte, kan gazı ile guide ederek). 6. Adım: Dextrose: 200-300 mg/kg IV (2-3 ml/kg %10 Dextrose). 7. Adım: Dozları dikkatle hesapla ve tekrarla.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "pediatrik_ilaclar",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "PALS/NRP Guidelines",
+      "protokol_tipi": "pediatri"
+    }
+  },
+  {
+    "id": "acls_026",
+    "icerik": "1. Adım: Mekanik CPR cihazı endikasyonları: Uzun süreli CPR, Ambulans içi CPR, Hipotermi, Transport sırasında CPR, Verimli kompresyon gerektiren durumlar. 2. Adım: Cihazı doğru pozisyonda yerleştir (meme başı hizası, sternum üzeri). 3. Adım: Cihazın ayarlarını yap (derinlik 5-6 cm, hız 100-120/dk). 4. Adım: Cihaz çalışırken bile ritim kontrolü ve ilaç uygulaması yapılabilir. 5. Adım: Cihazın yerinden kaymadığından emin ol. 6. Adım: Manuel CPR'a geçiş için hazırlıklı ol.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "mekanik_cpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "saha_hastane",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ERC/AHA Guidelines",
+      "cihaz": "LUCAS_AutoPulse"
+    }
+  },
+  {
+    "id": "acls_027",
+    "icerik": "1. Adım: ECMO destekli CPR (E-CPR) belirli merkezlerde uygulanır. 2. Adım: Potansiyel E-CPR adayı: <75 yaş, witnessed arrest, iyi başlangıç ritmi (VF/pVT), reversibl neden, düşük no-flow time. 3. Adım: Geleneksel CPR'a yanıt alınamayan seçilmiş hastalarda düşünülür. 4. Adım: Hızlıca ECMO ekibini aktive et. 5. Adım: CPR devam ederken femoral erişim sağlanır. 6. Adım: ECMO devreye girdikten sonra altta yatan nedeni tedavi et.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "ecpr",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.8,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Extracorporeal Life Support Organization",
+      "protokol_tipi": "ileri"
+    }
+  },
+  {
+    "id": "acls_028",
+    "icerik": "1. Adım: İnme sonrası komplikasyonları önle ve yönet. 2. Adım: Hipotansiyondan kaçın, SBP >110 mmHg hedefle (trombolitik alacaksa <185/110). 3. Adım: Hiperglisemiyi tedavi et (hedef 140-180 mg/dL). 4. Adım: Ateşi tedavi et (hedef normotermi). 5. Adım: Yutma fonksiyonunu değerlendir, aspirasyondan koru. 6. Adım: Dekübitüs ülserlerini önle. 7. Adım: Erken rehabilitasyona başla.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "inme_bakimi",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA/ASA Guidelines",
+      "protokol_tipi": "inme_sonrası"
+    }
+  },
+  {
+    "id": "acls_029",
+    "icerik": "1. Adım: ROSC sonrası nöbet aktivitesini izle ve tedavi et. 2. Adım: Status epileptikus varsa: Lorazepam 4 mg IV, sonra Levetirasetam 1000 mg IV veya Fosphenytoin 20 mg/kg IV. 3. Adım: Refrakter status epileptikusta midazolam veya propofol infüzyonu düşün. 4. Adım: EEG monitorizasyonu yap. 5. Adım: Nöbetler serebral oksijen tüketimini artırarak ikincil hasara neden olur.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "post_arrest_nobet",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Neurocritical Care Society",
+      "protokol_tipi": "nörolojik"
+    }
+  },
+  {
+    "id": "acls_030",
+    "icerik": "1. Adım: Aileyle zor görüşme için hazırlan. 2. Adım: Sakin, özel bir ortam sağla. 3. Adım: Doğrudan, anlaşılır ve şefkatli bir dil kullan. 4. Adım: 'Üzgünüm, yapabileceğimiz her şeyi yaptık ama...' gibi ifadeler kullan. 5. Adım: Soru sormalarına izin ver ve dürüstçe cevapla. 6. Adım: Dini/ruhsal destek ihtiyacını sor. 7. Adım: Sonraki adımları (otopsi, cenaze evi) basitçe açıkla.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "ailede_haber_verme",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.85,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Communication Guidelines",
+      "protokol_tipi": "iletişim"
+    }
+  },
+  {
+    "id": "acls_031",
+    "icerik": "1. Adım: Takım lideri, tüm resüsitasyon çabasını koordine eder. 2. Adım: Komutları net, yüksek ve anlaşılır verir. 3. Adım: Kapalı döngü iletişim kullanır (Emir ver -> Tekrarla -> Onayla). 4. Adım: Rol dağılımını yapar (kompresyon, hava yolu, ilaçlar, kayıt, zaman). 5. Adım: Performansı gerçek zamanlı olarak izler ve geri bildirim verir. 6. Adım: 2 dakikada bir kompresyon değişimini hatırlatır. 7. Adım: Takımın stres seviyesini yönetir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "liderlik_rolleri",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA Team Dynamics",
+      "protokol_tipi": "liderlik"
+    }
+  },
+  {
+    "id": "acls_032",
+    "icerik": "1. Adım: Kayıt tutucu, tüm olayı kronolojik olarak belgeler. 2. Adım: Arrest zamanını, ilk ritmi, şok zamanlarını ve enerjilerini kaydeder. 3. Adım: İlaçların isimlerini, dozlarını, yolunu ve zamanını kaydeder. 4. Adım: Müdahaleleri (entübasyon, IO, torakostomi) ve zamanlarını kaydeder. 5. Adım: ROSC zamanını ve son ritmi kaydeder. 6. Adım: Kalite metriklerini (kompresyon fraksiyonu, pause süreleri) kaydeder. 7. Adım: Debriefing için veri sağlar.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "kayit_tutma",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "AHA Guidelines",
+      "protokol_tipi": "dokümantasyon"
+    }
+  },
+  {
+    "id": "acls_033",
+    "icerik": "1. Adım: Yeniden canlandırma sonrası prognozu tahmin etmek için nörolojik muayene yap. 2. Adım: ROSC sonrası 72 saate kadar prognostikasyon yapılmamalıdır. 3. Adım: Sedasyon altında nörolojik muayene güvenilir değildir. 4. Adım: Pupiller ışık refleksi, kornea refleksi, ağrılı uyarana motor yanıt değerlendir. 5. Adım: Miyoklonik status epileptikus kötü prognoz göstergesidir. 6. Adım: EEG, SSEP, NSE, beyin BT/MRI gibi yardımcı testler kullanılabilir. 7. Adım: Kararı nöroloji/kritik bakım konsültasyonu ile ver.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "prognoz_tahmini",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.8,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ERC/ESICM Guidelines",
+      "protokol_tipi": "nörolojik_prognoz"
+    }
+  },
+  {
+    "id": "acls_034",
+    "icerik": "1. Adım: Organ bağışı için potansiyel donörü belirle. 2. Adım: Yerel organ bağışı organizasyonuna haber ver. 3. Adım: Aileyle organ bağışı hakkında konuş (özel eğitimli personel tercih edilir). 4. Adım: Donörün hemodinamik ve metabolik stabilizasyonunu sağla. 5. Adım: Beyin ölümü tanı kriterlerini uygula (apne testi, nörolojik muayene). 6. Adım: Süreci titizlikle belgele.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "organ_bagisi",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.9,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "National Donor Protocol",
+      "protokol_tipi": "etik_legal"
+    }
+  },
+  {
+    "id": "acls_035",
+    "icerik": "1. Adım: Pediatrik arrestin en sık nedeni hipoksidir (solunum yetmezliği/arrest). 2. Adım: Hızlıca hava yolu ve solunumu değerlendir. 3. Adım: Kompresyon/ventilasyon oranı: Tek kurtarıcı 30:2, İki kurtarıcı 15:2. 4. Adım: İlk ritim genellikle asistol veya bradikardidir. 5. Adım: VF/pVT daha nadirdir. 6. Adım: H's ve T's değerlendirmesi yap (özellikle hipovolemi ve hipotermi). 7. Adım: Dozları çocuğun kilosuna göre hesapla.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "pediatrik_arrest",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "her_yer",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "PALS Guidelines",
+      "protokol_tipi": "pediatri"
+    }
+  },
+  {
+    "id": "acls_036",
+    "icerik": "1. Adım: Yenidoğan resüsitasyonunda termoregülasyon çok önemlidir. 2. Adım: Bebeği hemen ısıtılmış, kuru havluyla kurula. 3. Adım: Isı kaynağının altına yatır. 4. Adım: Başını nötral pozisyona getir, hava yolunu aç. 5. Adım: Önce kurulama ve uyarma ile başla, gerekirse PPV'ye geç. 6. Adım: Oksijen konsantrasyonunu titize et (başlangıç %21, pulse oksimetre ile guide et). 7. Adım: Kalp hızı en önemli yanıt göstergesidir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "termoregulasyon",
+    "acillik_seviyesi": "kritik",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "NRP Guidelines",
+      "protokol_tipi": "yenidogan"
+    }
+  },
+  {
+    "id": "acls_037",
+    "icerik": "1. Adım: Yeniden canlandırma sırasında kullanılan ekipmanı kontrol et ve hazırla. 2. Adım: Defibrilatör/AED: Batarya, pedler, kağıt. 3. Adım: Airway kiti: Laringoskop bıçakları, endotrakeal tüpler, stylet, bag-valve-mask. 4. Adım: İlaç çekmeceği: Epinefrin, Amiodarone, Atropin, SF flushes. 5. Adım: IV/IO erişim setleri. 6. Adım: Monitör/EKG elektrotları. 7. Adım: Vakum için suction cihazı. 8. Adım: Düzenli ekipman kontrolü yap.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "ekipman_kontrolu",
+    "acillik_seviyesi": "yuksek",
+    "guvenilirlik": 0.95,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "listeli",
+    "metadata": {
+      "kaynak": "AHA Guidelines",
+      "protokol_tipi": "hazırlık"
+    }
+  },
+  {
+    "id": "acls_038",
+    "icerik": "1. Adım: Yeniden canlandırma sonrası psikolojik ilk yardım sağla. 2. Adım: Takım üyelerinin duygusal tepkilerini normalize et. 3. Adım: Debriefing yap: Ne iyi gitti, neler geliştirilebilir? 4. Adım: Başarısızlık hissini konuş. 5. Adım: Gerekiyorsa profesyonel psikolojik destek için yönlendir. 6. Adım: Özellikle pediatrik arrestler ve tanıdık hasta durumları zordur. 7. Adım: Takım ruhunu güçlendir.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "takim_destegi",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.85,
+    "lokasyon": "hastane_ici",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Critical Incident Stress Management",
+      "protokol_tipi": "psikososyal"
+    }
+  },
+  {
+    "id": "acls_039",
+    "icerik": "1. Adım: Simülasyon eğitimini düzenli olarak yap. 2. Adım: Farklı senaryoları çalış (VF, PEA, Asistol, Pediatrik, Özel durumlar). 3. Adım: Takım dinamiklerini ve liderlik becerilerini geliştir. 4. Adım: Gerçek zamanlı geri bildirim al. 5. Adım: Hataları simülasyonda yap, gerçekte yapma. 6. Adım: Protokolleri ve algoritmaları içselleştir. 7. Adım: Ekipman kullanım becerisini artır.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "simulasyon_egitimi",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.9,
+    "lokasyon": "egitim_ortami",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "Simulation in Healthcare",
+      "protokol_tipi": "eğitim"
+    }
+  },
+  {
+    "id": "acls_040",
+    "icerik": "1. Adım: Yeniden canlandırma protokolleri sürekli güncellenir, kendini geliştir. 2. Adım: Son kılavuz değişikliklerini takip et (ör. Atropin, Steroid, şok enerjileri). 3. Adım: Kanıta dayalı tıp uygula. 4. Adım: Yerel protokollerini bil ve uygula. 5. Adım: Uluslararası kılavuzlar (AHA, ERC, ILCOR) arasındaki farklılıkları bil. 6. Adım: En önemli faktörün yüksek kaliteli CPR olduğunu asla unutma.",
+    "kategori": "acls_protokol",
+    "alt_kategori": "surekli_gelisim",
+    "acillik_seviyesi": "orta",
+    "guvenilirlik": 0.95,
+    "lokasyon": "her_yer",
+    "adim_tipi": "sirali",
+    "metadata": {
+      "kaynak": "ILCOR",
+      "protokol_tipi": "kılavuz"
+    }
   }
 ]
