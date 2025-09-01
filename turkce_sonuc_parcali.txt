@@ -1,0 +1,44 @@
+=== KISA SORU ===
+
+As an emergency medicine specialist, answer concisely:
+
+For adult ROSC after cardiac arrest:
+1. First medications used?
+2. Dose calculation methods? 
+3. Infusion vs push?
+4. Intubation effects?
+
+Short professional response:
+
+
+=== İNGİLİZCE YANIT ===
+**1. First medications used?**
+- Cardiopulmonary resuscitation (CPR) should be initiated immediately.
+- Defibrillation should be started if indicated.
+
+**2. Dose calculation methods?**
+- The American Heart Association (AHA) guidelines recommend a target dose of 300-400 mg of epinephrine intravenously over 5-10 minutes.
+
+**3. Infusion vs push?**
+- Intravenous (IV) infusion.
+- Push is not recommended for ROSC.
+
+**4. Intubation effects?**
+- Intubation can be necessary for mechanical ventilation and protection from aspiration.
+- It is not necessary for ROSC.
+
+=== TÜRKÇE ÇEVİRİ ===
+**1. İlk kullanılan ilaçlar?**
+- Derhal kardiyopulmoner resüsitasyon (CPR) başlatılmalıdır.
+- Endike ise defibrilasyona başlanmalıdır.
+
+**2. Doz hesaplama yöntemleri ?**
+- Amerikan Kalp Derneği (AHA) kılavuzları, 5 -10 dakika boyunca intravenöz olarak 300 -400 mg hedef dozda epinefrin önermektedir.
+
+**3. İnfüzyon ve push?**
+- İntravenöz (IV) infüzyon.
+- İtme tavsiye edilmez d ROSC için.
+
+**4. Entübasyon etkileri ?**
+- Mekanik ventilasyon ve aspirasyondan korunma için entübasyon gerekli olabilir.
+- ROSC için gerekli değildir.
